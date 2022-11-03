@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="auth-page sign-up-page">
+        <div class="container">
+            <div class="wrapper">
+                <header class="header">
+                    <p class="header__contact-number">8 (800) 201-06-19</p>
+                    <ul class="header__social-list">
+                        <li class="header__social-list-element"><a href="#"><img src="../images/svg/instagram.svg"
+                                    alt="Instagram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img src="../images/svg/telegram.svg"
+                                    alt="telegram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img src="../images/svg/facebook.svg"
+                                    alt="facebook logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img src="../images/svg/vk.svg"
+                                    alt="vk logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img src="../images/svg/youtube.svg"
+                                    alt="youtube logo" /></a></li>
+                    </ul>
+                    <h1 class="header__title">
+                        <a class="header__link" href="#">Zeon wear</a>
+                    </h1>
+                </header>
+
+                <main class="authorization-block">
+                    <h1 class="tablet-title header__title">zeon wear</h1>
+                    <div class="authorization-block__title-block">
+                        <h2>zeon wear</h2>
+                        <p>by zeon</p>
+                    </div>
+                    <div class="authorization-block__form-block">
+                        <h3 id="auth-title">
+                            Регистрация
+                        </h3>
+                        <p>Есть аккаунт? <a href="../pages/signin_page.html">Войти</a></p>
+                        <form class="authorization-block__form">
+                            <div class="authorization-block__inputs-block">
+                                <div class="authorization-block__left-side">
+                                    <div class="input-block">
+                                        <input id="name" required class="auth-input" type="text">
+                                        <label for="name" onclick="document.getElementById('name').focus(); return false;" class="auth-input-label">Имя*</label>
+                                    </div>
+                                    <div class="input-block">
+                                        <input id="surname" required class="auth-input" type="text">
+                                        <label for="surname" class="auth-input-label">Фамилия*</label>
+                                    </div>
+                                    <div class="input-block">
+                                        <input id="email" required class="auth-input" type="email">
+                                        <label for="email" class="auth-input-label">e-mail*</label>
+                                    </div>
+                                    <p class="auth-input-label">Дата рождения</p>
+                                    <div class="birthday-inputs-block">
+                                        <div class="input-block input-block-day">
+                                            <input id="day" class="auth-input" type="number" min="1" max="31">
+                                            <label for="day" class="auth-input-label">День</label>
+                                        </div>
+                                        <div class="input-block input-block-month">
+                                            <select id="month" class="auth-input">
+                                            </select>
+                                            <label for="email" class="auth-input-label">Месяц</label>
+                                            <img src="../images/svg/select-arrow.svg">
+                                        </div>
+                                        <div class="input-block input-block-year">
+                                            <input id="year" required class="auth-input" type="number" min="1900" max="2022">
+                                            <label for="year" class="auth-input-label">Год</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="authorization-block__right-side">
+                                    <div class="right-side-flex-box">
+                                        <div class="input-block">
+                                            <select id="sex" class="auth-input">
+                                                <option selected disabled hidden></option>
+                                                <option value="м">Мужской</option>
+                                                <option value="ж">Женский</option>
+                                            </select>
+                                            <label for="sex" class="auth-input-label">Пол</label>
+                                            <img src="../images/svg/select-arrow.svg">
+                                        </div>
+                                        <div class="input-block">
+                                            <input id="city" class="auth-input" type="text">
+                                            <label for="city" class="auth-input-label">Ваш город</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-block">
+                                        <select id="sports" class="auth-input" type="text">
+                                            <option hidden selected disabled></option>
+                                            <option>Баскетбол</option>
+                                        </select>
+                                        <label for="sports" class="auth-input-label">Любимые виды спорта</label>
+                                        <img src="../images/svg/select-arrow.svg">
+                                    </div>
+                                    <div class="input-block password-block">
+                                        <input id="password" class="password" class="auth-input" required type="password">
+                                        <label for="password" class="auth-input-label">Придумайте пароль*</label>
+                                        <img src="../images/svg/eye_locked.svg" alt="Hide password" />
+                                    </div>
+                                    <div class="input-block password-block">
+                                        <input id="repeat-password" class="password" class="auth-input" required type="password">
+                                        <label for="repeat-password" class="auth-input-label">Повторите пароль*</label>
+                                        <img src="../images/svg/eye_locked.svg" alt="Hide password" />
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="subscribe-input">Подписаться на новости и акции
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                              </label>
+                            <button type="submit">Зарегистрироваться</button>
+                            <a class="cancel-link">Отмена</a>
+                        </form>
+                    </div>
+                </main>
+
+                <div class="main-nav-block">
+                    <nav class="main-nav">
+                        <div class="main-nav__search-block">
+                            <img src="../images/svg/search.svg" alt="Search icon">
+                            <input placeholder="Поиск" />
+                        </div>
+                        <nav class="main-nav__catalog">
+                            <ul>
+                                <li>Новинки</li>
+                                <li>Команды</li>
+                                <li>Мужчинам</li>
+                                <li>
+                                    <img src="../images/svg/logo.svg" alt="Logo">
+                                </li>
+                                <li>Женщинам</li>
+                                <li>Дети</li>
+                                <li>Распродажа</li>
+                            </ul>
+                        </nav>
+                        <nav class="main-nav__user-interface">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/svg/heart.svg" alt="Heart icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/svg/shopping_cart.svg" alt="Shopping_cart icon">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../images/svg/log_in.svg" alt="Login icon">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </nav>
+                    <nav class="mobile-main-nav">
+                        <ul class="mobile-main-nav__list">
+                            <li class="mobile-main-nav__element">
+                                <img class="mobile-main-nav__icon" src="../images/svg/menu.svg">
+                            </li>
+                            <li class="mobile-main-nav__element">
+                                <img class="mobile-main-nav__icon" src="../images/svg/heart.svg">
+                            </li>
+                            <li class="mobile-main-nav__element">
+                                <img class="mobile-main-nav__icon" src="../images/svg/logo.svg">
+                            </li>
+                            <li class="mobile-main-nav__element">
+                                <img class="mobile-main-nav__icon" src="../images/svg/shopping_cart.svg">
+                            </li>
+                            <li class="mobile-main-nav__element">
+                                <img class="mobile-main-nav__icon" src="../images/svg/search.svg">
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/funcInputs.js">
+    </script>
+</body>
+
+</html>
