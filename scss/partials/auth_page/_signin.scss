@@ -1,0 +1,128 @@
+.sign-in-page {
+    .authorization-block {
+        background: url("../../images/jpg/authorization_bg.jpg") center no-repeat;
+
+        @media screen and (max-width: $tablets) {
+            background: none;
+            padding-top: 32px;
+            height: auto;
+        }
+
+        &__title-block {
+            color: #fff;
+        }
+
+        &__form-block {
+            @media screen and (min-width: $tablets + 1) {
+                padding: 24px 12px 32px 24px;
+                width: 363px;
+                right: 232px;
+                top: 270px;
+            }
+
+
+
+            h3 {
+                margin-bottom: 14px;
+                letter-spacing: 1px;
+
+                @media screen and (max-width: $tablets) {
+                    letter-spacing: 0px;
+                    margin-bottom: 12px;
+                }
+            }
+
+            .input-block {
+                margin-bottom: 1px;
+
+                input {
+                    padding-bottom: 6px;
+                }
+            }
+
+            button {
+                margin-bottom: 8px;
+            }
+        }
+
+        &__form {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+            gap: 10px;
+
+            @media screen and (max-width: $tablets) {
+                margin-top: 34px;
+            }
+
+            input,
+            select {
+                padding: 13.5px 16px;
+                width: 100%;
+                border: 1px solid $secondary-gray-light;
+                border-radius: 16px;
+                transition: $labels;
+                color: $main-black;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 22.75px;
+                letter-spacing: 1px;
+            }
+
+            .password-block {
+                position: relative;
+
+                input {
+                    padding-right: 40px;
+                }
+
+                img {
+                    position: absolute;
+                    width: 17px;
+                    right: 20px;
+                    top: 50%;
+                    transform: translate(0%, -50%);
+                    cursor: pointer;
+                    transition: $labels;
+
+                    @media screen and (max-width: $tablets) {
+                        right: 20px;
+                    }
+                }
+            }
+
+            button {
+                background: $main-black;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 150%;
+                padding: 13px 21px 10px;
+                border-radius: 16px;
+                border: none;
+                letter-spacing: 1px;
+                margin-top: -1px;
+                margin-bottom: 10px;
+
+                @media screen and (max-width: $tablets) {
+                    margin-bottom: 0px;
+                    padding-top: 15px;
+                }
+            }
+
+            .cancel-link {
+                font-size: 13px;
+                color: $gray-label;
+                text-align: center;
+
+                @media screen and (max-width: $tablets) {
+                    border: 1px solid $gray-label;
+                    border-radius: 16px;
+                    padding: 12px 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
