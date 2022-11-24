@@ -1,74 +1,544 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
+
 <body>
     <div class="main-page">
-        <div class="container">
-            <div class="wrapper">
+        <div class="wrapper">
+            <div class="container">
                 <header class="header">
-                    <p class="header__contact-number">8 (800) 201-06-19</p>
+                    <p class="header__contact-number contact-number">8 (800) 201-06-19</p>
                     <ul class="header__social-list">
-                        <li class="header__social-list-element"><a href="#"><img src="./images/svg/instagram.svg"
-                                    alt="Instagram logo" /></a></li>
-                        <li class="header__social-list-element"><a href="#"><img src="./images/svg/telegram.svg"
-                                    alt="Instagram logo" /></a></li>
-                        <li class="header__social-list-element"><a href="#"><img src="./images/svg/facebook.svg"
-                                    alt="Instagram logo" /></a></li>
-                        <li class="header__social-list-element"><a href="#"><img src="./images/svg/vk.svg"
-                                    alt="Instagram logo" /></a></li>
-                        <li class="header__social-list-element"><a href="#"><img src="./images/svg/youtube.svg"
-                                    alt="Instagram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="./images/svg/social_networks/instagram.svg" alt="instagram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="./images/svg/social_networks/telegram.svg" alt="telegram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="./images/svg/social_networks/facebook.svg" alt="facebook logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="./images/svg/social_networks/vk.svg" alt="vk logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="./images/svg/social_networks/youtube.svg" alt="youtube logo" /></a></li>
                     </ul>
                     <h1 class="header__title">
-                        <a class="header__link" href="#">Zeon wear</a>
+                        <a class="header__link" href="./index.html">Zeon wear</a>
                     </h1>
                 </header>
+            </div>
 
-                <main class="authorization-block">
-                   asd
+            <div class="container container-main">
+                <main>
+                    <div class="main-slide-block">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="./pages/special_offers_page.html">
+                                        <div class="swiper-slide-inner">
+                                            <img src="./images/jpg/slider_images/slider-1.jpg">
+                                            <div class="background-box"></div>
+                                            <div class="background-box white-background-box"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./pages/special_offers_page.html">
+                                        <div class="swiper-slide-inner">
+                                            <img src="./images/jpg/slider_images/slider-2.jpg">
+                                            <div class="background-box"></div>
+                                            <div class="background-box white-background-box"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./pages/special_offers_page.html">
+                                        <div class="swiper-slide-inner">
+                                            <img src="./images/jpg/slider_images/slider-3.jpg">
+                                            <div class="background-box"></div>
+                                            <div class="background-box white-background-box"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./pages/special_offers_page.html">
+                                        <div class="swiper-slide-inner">
+                                            <img src="./images/jpg/slider_images/slider-4.jpg">
+                                            <div class="background-box"></div>
+                                            <div class="background-box white-background-box"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./pages/special_offers_page.html">
+                                        <div class="swiper-slide-inner">
+                                            <img src="./images/jpg/slider_images/slider-5.jpg">
+                                            <div class="background-box"></div>
+                                            <div class="background-box white-background-box"></div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <nav class="catalog-nav">
+                        <ul class="catalog-list">
+                            <li class="catalog-list-element"><a href="#">Бутсы</a></li>
+                            <li class="catalog-list-element"><a href="#">Мини-футбол</a></li>
+                            <li class="catalog-list-element"><a href="#">Фитнес</a></li>
+                            <li class="catalog-list-element"><a href="#">Обувь</a></li>
+                            <li class="catalog-list-element"><a href="#">Йога</a></li>
+                            <li class="catalog-list-element"><a href="#">Майки и футболки</a></li>
+                            <li class="catalog-list-element"><a href="#">Куртки и жилеты</a></li>
+                            <li class="catalog-list-element"><a href="#">Спортивные костюмы</a></li>
+                            <li class="catalog-list-element"><a href="#">Головной убор</a></li>
+                            <li class="catalog-list-element"><a href="#">Мячи</a></li>
+                            <li class="catalog-list-element"><a href="#">Бутсы</a></li>
+                        </ul>
+                    </nav>
+                    <div class="stock-slide-block">
+                        <div class="swiper logoSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <div class="image-block joma-logo">
+                                            <img src="./images/svg/brands/joma_logo.svg">
+                                        </div>
+                                        <div class="image-block puma-logo">
+                                            <img src="./images/svg/brands/puma_logo.svg">
+                                        </div>
+                                        <div class="image-block adidas-logo">
+                                            <img src="./images/svg/brands/adidas_Logo.svg">
+                                        </div>
+                                        <div class="image-block asics-logo">
+                                            <img src="./images/svg/brands/asics_logo.svg">
+                                        </div>
+                                        <div class="image-block reebok-logo">
+                                            <img src="./images/svg/brands/reebok_logo.svg">
+                                        </div>
+                                        <div class="image-block nike-logo">
+                                            <img src="./images/svg/brands/nike_logo.svg">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <div class="image-block joma-logo">
+                                            <img src="./images/svg/brands/joma_logo.svg">
+                                        </div>
+                                        <div class="image-block puma-logo">
+                                            <img src="./images/svg/brands/puma_logo.svg">
+                                        </div>
+                                        <div class="image-block adidas-logo">
+                                            <img src="./images/svg/brands/adidas_Logo.svg">
+                                        </div>
+                                        <div class="image-block asics-logo">
+                                            <img src="./images/svg/brands/asics_logo.svg">
+                                        </div>
+                                        <div class="image-block reebok-logo">
+                                            <img src="./images/svg/brands/reebok_logo.svg">
+                                        </div>
+                                        <div class="image-block nike-logo">
+                                            <img src="./images/svg/brands/nike_logo.svg">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-inner">
+                                        <div class="image-block joma-logo">
+                                            <img src="./images/svg/brands/joma_logo.svg">
+                                        </div>
+                                        <div class="image-block puma-logo">
+                                            <img src="./images/svg/brands/puma_logo.svg">
+                                        </div>
+                                        <div class="image-block adidas-logo">
+                                            <img src="./images/svg/brands/adidas_Logo.svg">
+                                        </div>
+                                        <div class="image-block asics-logo">
+                                            <img src="./images/svg/brands/asics_logo.svg">
+                                        </div>
+                                        <div class="image-block reebok-logo">
+                                            <img src="./images/svg/brands/reebok_logo.svg">
+                                        </div>
+                                        <div class="image-block nike-logo">
+                                            <img src="./images/svg/brands/nike_logo.svg">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </main>
+            </div>
 
+            <div class="container container-footer">
                 <div class="main-nav-block">
                     <nav class="main-nav">
                         <div class="main-nav__search-block">
-                            <img src="./images/svg/search.svg" alt="Search icon">
-                            <input placeholder="Поиск" />
+                            <img src="./images/svg/main_nav_bar/search.svg" alt="Search icon">
+                            <input placeholder="Поиск" id="search-input"/>
                         </div>
                         <nav class="main-nav__catalog">
-                            <ul>
-                                <li>Новинки</li>
-                                <li>Команды</li>
-                                <li>Мужчинам</li>
-                                <li><img src="./images/svg/logo.svg" alt="Logo"></li>
-                                <li>Женщинам</li>
-                                <li>Дети</li>
-                                <li>Распродажа</li>
+                            <ul class="main-nav__catalog__nav">
+                                <li class="main-nav__catalog__nav__element">
+                                    <a href="./pages/special_offers_page.html">Новинки</a>
+                                </li>
+                                <li class="main-nav__catalog__nav__element">
+                                    <a href="./pages/team_page.html">Команды</a>
+                                </li>
+                                <li class="main-nav__catalog__nav__element">
+                                    <a href="./pages/men_page.html">Мужчинам</a>
+                                </li>
+                                <li class="main-nav__catalog__nav__element">
+                                    <img src="./images/svg/logo.svg" alt="Logo">
+                                </li>
+                                <li class="main-nav__catalog__nav__element">
+                                    Женщинам
+                                </li>
+                                <li class="main-nav__catalog__nav__element">
+                                    Дети
+                                </li>
+                                <li class="main-nav__catalog__nav__element">
+                                    Распродажа
+                                </li>
                             </ul>
+
+                            <nav class="modal-nav" id="modal-nav">
+                                <ul class="modal-nav__list">
+                                    <h3 class="modal-nav__list__title">
+                                        Виды спорта
+                                    </h3>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Футбол</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Мини-футбол</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Волейбол</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Легкая атлетика</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Гандбол</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Фитнес</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Регби</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Йога</a>
+                                    </li>
+                                </ul>
+                                <ul class="modal-nav__list">
+                                    <h3 class="modal-nav__list__title">
+                                        Одежда
+                                    </h3>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Худи и толстовки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Майки и футболки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Брюки и тайтсы</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Спортивные костюмы</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Куртки и жилеты</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Носки и гетры</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Форма для команд и джерси</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Компрессионное белье и базовый слой</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Прочее</a>
+                                    </li>
+                                </ul>
+                                <ul class="modal-nav__list">
+                                    <h3 class="modal-nav__list__title">
+                                        Обувь
+                                    </h3>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Для бега</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Футзальная</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Искусственное поле</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Волейбольная</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Для фитнеса</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Кэжуальная</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Прочее</a>
+                                    </li>
+                                </ul>
+                                <ul class="modal-nav__list">
+                                    <h3 class="modal-nav__list__title">
+                                        Аксессуары
+                                    </h3>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Мячи</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Щитки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Перчатки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Манишки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Защита</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Головной убор</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Прочее</a>
+                                    </li>
+                                </ul>
+                                <ul class="modal-nav__list">
+                                    <h3 class="modal-nav__list__title">
+                                        Бренды
+                                    </h3>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Мячи</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Щитки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Перчатки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Манишки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Защита</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Головной убор</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Прочее</a>
+                                    </li>
+                                </ul>
+                                <ul class="modal-nav__list">
+                                    <h3 class="modal-nav__list__title">
+                                        Спортивное питание
+                                    </h3>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Мячи</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Щитки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Перчатки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Манишки</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Защита</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Головной убор</a>
+                                    </li>
+                                    <li class="modal-nav__list__element">
+                                        <a href="./pages/men_page.html">Прочее</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </nav>
                         <nav class="main-nav__user-interface">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/svg/heart.svg" alt="Heart icon">
+                            <ul class="main-nav__user-interface__list">
+                                <li class="main-nav__user-interface__list__item">
+                                    <a id="favorite" href="./pages/user_pages/favorites_page.html">
+                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.58065 5.27251C0.953028 4.35817 1.48996 3.52961 2.16139 2.8332C2.83332 2.13472 3.62555 1.57964 4.49499 1.19816C5.39655 0.801017 6.36351 0.597736 7.33976 0.600118C8.70936 0.600118 10.0456 0.997831 11.2069 1.74907C11.4847 1.92877 11.7486 2.12616 11.9986 2.34122C12.2487 2.12616 12.5126 1.92877 12.7904 1.74907C13.9516 0.997831 15.2879 0.600118 16.6575 0.600118C17.6437 0.600118 18.5994 0.800448 19.5023 1.19816C20.3746 1.58114 21.1608 2.13205 21.8359 2.8332C22.5082 3.52882 23.0452 4.35758 23.4166 5.27251C23.8028 6.22407 24 7.23455 24 8.2745C24 9.25552 23.8111 10.2778 23.436 11.3177C23.1221 12.1868 22.6721 13.0883 22.097 13.9986C21.1858 15.4392 19.9329 16.9417 18.3771 18.4648C15.7991 20.9895 13.246 22.7336 13.1376 22.8043L12.4792 23.2521C12.1875 23.4494 11.8125 23.4494 11.5208 23.2521L10.8624 22.8043C10.754 22.7306 8.20375 20.9895 5.6229 18.4648C4.06716 16.9417 2.81424 15.4392 1.90302 13.9986C1.32796 13.0883 0.87513 12.1868 0.563984 11.3177C0.18894 10.2778 2.86102e-05 9.25552 2.86102e-05 8.2745C-0.0027504 7.23455 0.194496 6.22407 0.58065 5.27251ZM11.9986 20.9218C11.9986 20.9218 21.8886 14.2019 21.8886 8.2745C21.8886 5.2725 19.5467 2.83909 16.6575 2.83909C14.6267 2.83909 12.8654 4.04107 11.9986 5.7969C11.1319 4.04107 9.37055 2.83909 7.33976 2.83909C4.45054 2.83909 2.1086 5.2725 2.1086 8.2745C2.1086 14.2019 11.9986 20.9218 11.9986 20.9218Z"
+                                                fill="#171717" />
+                                        </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/svg/shopping_cart.svg" alt="Shopping_cart icon">
+                                <li class="main-nav__user-interface__list__item">
+                                    <a id="basket" href="./pages/basket_page.html">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M7.72656 20.7883C7.72656 19.7942 8.53245 18.9883 9.52656 18.9883C10.5207 18.9883 11.3266 19.7942 11.3266 20.7883C11.3266 21.7824 10.5207 22.5883 9.52656 22.5883C8.53245 22.5883 7.72656 21.7824 7.72656 20.7883Z"
+                                                fill="#171717" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18 20.7883C18 19.7942 18.8059 18.9883 19.8 18.9883C20.7941 18.9883 21.6 19.7942 21.6 20.7883C21.6 21.7824 20.7941 22.5883 19.8 22.5883C18.8059 22.5883 18 21.7824 18 20.7883Z"
+                                                fill="#171717" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 1.62549C0 1.0732 0.447715 0.625488 1 0.625488H5C5.47663 0.625488 5.88701 0.961874 5.98055 1.42923L6.82043 5.62549H23C23.298 5.62549 23.5805 5.75842 23.7705 5.98804C23.9605 6.21767 24.0381 6.52007 23.9823 6.81282L22.3809 15.2103C22.2437 15.9009 21.868 16.5212 21.3195 16.9628C20.7738 17.4021 20.0916 17.6365 19.3914 17.6255H9.68864C8.98837 17.6365 8.3062 17.4021 7.76048 16.9628C7.21225 16.5214 6.83663 15.9014 6.69933 15.2112C6.69927 15.2109 6.69938 15.2114 6.69933 15.2112L5.02879 6.86469C5.02201 6.83708 5.01638 6.80902 5.01195 6.78057L4.18032 2.62549H1C0.447715 2.62549 0 2.17777 0 1.62549ZM7.22073 7.62549L8.66084 14.8207C8.70656 15.0509 8.83179 15.2577 9.01461 15.4048C9.19743 15.552 9.42619 15.6302 9.66084 15.6257L9.68 15.6255H19.4L19.4192 15.6257C19.6538 15.6302 19.8826 15.552 20.0654 15.4048C20.2474 15.2583 20.3723 15.0528 20.4185 14.8239L21.7913 7.62549H7.22073Z"
+                                                fill="#171717" />
+                                        </svg>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/svg/log_in.svg" alt="Login icon">
+                                <li class="main-nav__user-interface__list__item" id="sign_in_item">
+                                    <a id="sign_in" href="./pages/signin_page.html">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M14 3C14 2.44772 14.4477 2 15 2H19C19.7957 2 20.5587 2.31607 21.1213 2.87868C21.6839 3.44129 22 4.20435 22 5V19C22 19.7957 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7957 22 19 22H15C14.4477 22 14 21.5523 14 21C14 20.4477 14.4477 20 15 20H19C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V5C20 4.73478 19.8946 4.48043 19.7071 4.29289C19.5196 4.10536 19.2652 4 19 4H15C14.4477 4 14 3.55229 14 3Z"
+                                                fill="#171717" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.29289 6.29289C9.68342 5.90237 10.3166 5.90237 10.7071 6.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L10.7071 17.7071C10.3166 18.0976 9.68342 18.0976 9.29289 17.7071C8.90237 17.3166 8.90237 16.6834 9.29289 16.2929L13.5858 12L9.29289 7.70711C8.90237 7.31658 8.90237 6.68342 9.29289 6.29289Z"
+                                                fill="#171717" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M2 12C2 11.4477 2.44772 11 3 11H15C15.5523 11 16 11.4477 16 12C16 12.5523 15.5523 13 15 13H3C2.44772 13 2 12.5523 2 12Z"
+                                                fill="#171717" />
+                                        </svg>
                                     </a>
+
+                                    <div class="modal-block">
+                                        <ul class="modal-block__list">
+                                            <li class="modal-block__list__item">
+                                                <a class="modal-block__list__item__link"
+                                                    href="./pages/user_pages/set_user_page.html">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_7386_3583)">
+                                                            <path
+                                                                d="M15.3018 9.75037C14.0682 11.3252 12.1785 12.3225 10 12.3225C7.87402 12.3225 5.93176 11.3252 4.69816 9.75037C1.83727 11.5614 0 14.711 0 18.2018C0 19.1467 0.734908 19.8554 1.65354 19.8554H18.3202C19.2651 19.8816 20 19.0942 20 18.2018C20 14.711 18.1627 11.5351 15.3018 9.75037Z"
+                                                                fill="#054EDB" />
+                                                            <path
+                                                                d="M10.0006 0.144043C7.00845 0.144043 4.59375 2.58499 4.59375 5.55087C4.59375 8.54299 7.0347 10.9577 10.0006 10.9577C12.9665 10.9577 15.4074 8.56924 15.4074 5.55087C15.4074 2.53249 12.9927 0.144043 10.0006 0.144043Z"
+                                                                fill="#054EDB" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_7386_3583">
+                                                                <rect width="20" height="20" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <h5>Профиль</h5>
+                                                </a>
+                                            </li>
+                                            <li class="modal-block__list__item">
+                                                <a class="modal-block__list__item__link"
+                                                    href="./pages/user_pages/news_page.html">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M19.2857 5.00001H15.7143V0.714299C15.7143 0.319796 15.3945 0 15 0H0.714299C0.319796 0 0 0.319796 0 0.714299V17.1428C0 18.7208 1.27918 20 2.85715 20H17.1428C18.7208 20 20 18.7208 20 17.1428V5.71427C20 5.31981 19.6802 5.00001 19.2857 5.00001ZM5.71427 3.57141H9.99998C10.3945 3.57141 10.7143 3.89121 10.7143 4.28571C10.7143 4.68021 10.3945 5.00001 9.99998 5.00001H5.71427C5.31977 5.00001 4.99997 4.68021 4.99997 4.28571C4.99997 3.89121 5.31981 3.57141 5.71427 3.57141ZM12.1428 17.1428H3.57141C3.17691 17.1428 2.85711 16.823 2.85711 16.4285C2.85711 16.034 3.17691 15.7142 3.57141 15.7142H12.1428C12.5373 15.7142 12.8571 16.034 12.8571 16.4285C12.8571 16.823 12.5373 17.1428 12.1428 17.1428ZM12.1428 14.2857H3.57141C3.17691 14.2857 2.85711 13.9659 2.85711 13.5714C2.85711 13.1769 3.17691 12.8571 3.57141 12.8571H12.1428C12.5373 12.8571 12.8571 13.1769 12.8571 13.5714C12.8571 13.9659 12.5373 14.2857 12.1428 14.2857ZM12.1428 11.4286H3.57141C3.17691 11.4286 2.85711 11.1088 2.85711 10.7143C2.85711 10.3198 3.17691 9.99998 3.57141 9.99998H12.1428C12.5373 9.99998 12.8571 10.3198 12.8571 10.7143C12.8571 11.1088 12.5373 11.4286 12.1428 11.4286ZM12.1428 8.57142H3.57141C3.17691 8.57142 2.85711 8.25163 2.85711 7.85712C2.85711 7.46262 3.17691 7.14282 3.57141 7.14282H12.1428C12.5373 7.14282 12.8571 7.46262 12.8571 7.85712C12.8571 8.25163 12.5373 8.57142 12.1428 8.57142ZM18.5714 17.1428C18.5714 17.9318 17.9318 18.5714 17.1428 18.5714C16.3539 18.5714 15.7143 17.9318 15.7143 17.1428V6.42857H18.5714V17.1428H18.5714Z"
+                                                            fill="#8B96B1" />
+                                                    </svg>
+
+                                                    <h5>Новости</h5>
+                                                </a>
+                                            </li>
+                                            <li class="modal-block__list__item">
+                                                <a class="modal-block__list__item__link"
+                                                    href="./pages/user_pages/favorites_page.html">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0.483875 4.39367C0.794189 3.63173 1.24163 2.94126 1.80116 2.36092C2.3611 1.77885 3.02129 1.31629 3.74582 0.998386C4.49712 0.667432 5.30293 0.498032 6.11646 0.500017C7.2578 0.500017 8.37135 0.831444 9.33906 1.45747C9.57057 1.60723 9.7905 1.77172 9.99885 1.95093C10.2072 1.77172 10.4271 1.60723 10.6587 1.45747C11.6264 0.831444 12.7399 0.500017 13.8812 0.500017C14.7031 0.500017 15.4995 0.666958 16.2519 0.998386C16.9788 1.31754 17.634 1.77663 18.1966 2.36092C18.7568 2.9406 19.2044 3.63123 19.5138 4.39367C19.8356 5.18664 20 6.02871 20 6.89533C20 7.71285 19.8426 8.56474 19.53 9.43137C19.2684 10.1556 18.8934 10.9068 18.4142 11.6654C17.6548 12.8659 16.6107 14.118 15.3143 15.3872C13.1659 17.4912 11.0383 18.9446 10.948 19.0035L10.3994 19.3766C10.1563 19.5411 9.84374 19.5411 9.60066 19.3766L9.05199 19.0035C8.9617 18.9421 6.83646 17.4912 4.68575 15.3872C3.3893 14.118 2.3452 12.8659 1.58585 11.6654C1.10663 10.9068 0.729275 10.1556 0.469986 9.43137C0.15745 8.56474 2.28882e-05 7.71285 2.28882e-05 6.89533C-0.00229263 6.02871 0.162079 5.18664 0.483875 4.39367Z"
+                                                            fill="#8B96B1" />
+                                                    </svg>
+                                                    <h5>Избранное</h5>
+                                                </a>
+                                            </li>
+                                            <li class="modal-block__list__item">
+                                                <a class="modal-block__list__item__link"
+                                                    href="./pages/special_offers_page.html">
+                                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12.0727 3.77906C10.2547 1.60531 8.46027 0.192463 8.38488 0.13348C7.97525 -0.186939 7.37476 0.105864 7.37476 0.625651V3.374C7.37476 4.79317 5.49666 5.29261 4.79282 4.05913C4.57396 3.67657 4.04179 3.63625 3.76629 3.97281C1.8749 6.28101 0.1875 9.19134 0.1875 12.1878C0.1875 16.4954 3.69207 20 7.99974 20C12.3074 20 15.812 16.4954 15.812 12.1878C15.812 9.11381 14.0371 6.12828 12.0727 3.77906ZM4.56235 10.0003C4.56235 9.31091 5.12327 8.75038 5.81231 8.75038C6.50135 8.75038 7.06227 9.31091 7.06227 10.0003C7.06227 10.6898 6.50135 11.2503 5.81231 11.2503C5.12327 11.2503 4.56235 10.6898 4.56235 10.0003ZM6.30566 15.3838C6.09488 15.6554 5.70208 15.706 5.42873 15.4935C5.15609 15.2814 5.10726 14.8888 5.31897 14.6166L9.69383 8.99178C9.90593 8.71913 10.2985 8.67031 10.5707 8.88202C10.8434 9.09412 10.8922 9.48668 10.6805 9.75894L6.30566 15.3838ZM10.1872 15.6252C9.49813 15.6252 8.93721 15.0646 8.93721 14.3752C8.93721 13.6858 9.49813 13.1252 10.1872 13.1252C10.8762 13.1252 11.4371 13.6858 11.4371 14.3752C11.4371 15.0646 10.8762 15.6252 10.1872 15.6252Z"
+                                                            fill="#8B96B1" />
+                                                    </svg>
+                                                    <h5>Спец. предложения</h5>
+                                                </a>
+                                            </li>
+                                            <li class="modal-block__list__item">
+                                                <a class="modal-block__list__item__link" href="./pages/user_pages/history_page.html">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_7386_3608)">
+                                                            <path
+                                                                d="M11.0893 0H8.22545C7.84676 0 7.53906 0.3077 7.53906 0.68639C7.53906 1.06508 7.84676 1.37278 8.22545 1.37278H11.0893C11.468 1.37278 11.7757 1.06508 11.7757 0.68639C11.7757 0.3077 11.468 0 11.0893 0Z"
+                                                                fill="#8B96B1" />
+                                                            <path
+                                                                d="M18.7347 4.5207L16.8649 2.6509C16.6045 2.39054 16.1785 2.39054 15.8945 2.6509C15.6341 2.91125 15.6341 3.33729 15.8945 3.62129L17.7406 5.46745C17.8827 5.60947 18.0483 5.65681 18.214 5.65681C18.3797 5.65681 18.5691 5.58582 18.6874 5.46745C18.995 5.20709 18.995 4.78106 18.7347 4.5207Z"
+                                                                fill="#8B96B1" />
+                                                            <path
+                                                                d="M9.6462 2.86389C4.91246 2.86389 1.07812 6.69823 1.07812 11.432C1.07812 16.1657 4.91246 20.0001 9.6462 20.0001C14.3799 20.0001 18.2142 16.1657 18.2142 11.432C18.2142 6.69823 14.3799 2.86389 9.6462 2.86389ZM13.1965 12.355H9.6462C9.26751 12.355 8.95981 12.0473 8.95981 11.6686V7.21895C8.95981 6.84025 9.26751 6.53255 9.6462 6.53255C10.0249 6.53255 10.3326 6.84025 10.3326 7.21895V11.0059H13.1965C13.5752 11.0059 13.8829 11.3136 13.8829 11.6923C13.8829 12.0474 13.5752 12.355 13.1965 12.355Z"
+                                                                fill="#8B96B1" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_7386_3608">
+                                                                <rect width="20" height="20" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+
+
+                                                    <h5>История заказов</h5>
+                                                </a>
+                                            </li>
+                                            <li class="modal-block__list__item">
+                                                <a class="modal-block__list__item__link"
+                                                    href="./pages/user_pages/help_page.html">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M0 10C0 4.46341 4.46341 0 10 0C15.5366 0 20 4.46341 20 10C20 15.5366 15.5366 20 10 20C4.46341 20 0 15.5366 0 10ZM9.30216 10.3654C9.14537 10.7482 9.06698 11.2623 9.06698 11.908H10.8378L10.8655 11.486C10.9162 11.0341 11.1168 10.6398 11.4673 10.3031L12.0276 9.77051C12.4657 9.34625 12.7724 8.96118 12.9476 8.61532C13.1228 8.26484 13.2104 7.89361 13.2104 7.50163C13.2104 6.63927 12.9407 5.9729 12.4011 5.50252C11.8616 5.02753 11.103 4.79004 10.1253 4.79004C9.1569 4.79004 8.39138 5.03906 7.82878 5.53711C7.27078 6.03516 6.98717 6.72458 6.97795 7.60539H8.98397C8.99319 7.23646 9.09926 6.94824 9.30216 6.74072C9.50968 6.52859 9.78407 6.42253 10.1253 6.42253C10.8447 6.42253 11.2044 6.8122 11.2044 7.59155C11.2044 7.8498 11.1353 8.09652 10.9969 8.33171C10.8586 8.56228 10.5796 8.86434 10.1599 9.23787C9.74487 9.6068 9.45896 9.98264 9.30216 10.3654ZM9.17765 13.2707C8.97013 13.469 8.86637 13.7226 8.86637 14.0316C8.86637 14.3359 8.96783 14.5873 9.17074 14.7856C9.37825 14.9839 9.65034 15.083 9.98698 15.083C10.3236 15.083 10.5934 14.9839 10.7963 14.7856C11.0038 14.5873 11.1076 14.3359 11.1076 14.0316C11.1076 13.7226 11.0015 13.469 10.7894 13.2707C10.5819 13.0678 10.3144 12.9663 9.98698 12.9663C9.65956 12.9663 9.38978 13.0678 9.17765 13.2707Z"
+                                                            fill="#8B96B1" />
+                                                    </svg>
+                                                    <h5>Помощь</h5>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
@@ -76,25 +546,117 @@
                     <nav class="mobile-main-nav">
                         <ul class="mobile-main-nav__list">
                             <li class="mobile-main-nav__element">
-                                <img class="mobile-main-nav__icon" src="./images/svg/menu.svg">
+                                <a href="./pages/mobile_pages/menu_levels.html">
+                                    <img class="mobile-main-nav__icon" src="./images/svg/main_nav_bar/menu.svg">
+                                </a>
                             </li>
                             <li class="mobile-main-nav__element">
-                                <img class="mobile-main-nav__icon" src="./images/svg/heart.svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.58065 5.27251C0.953028 4.35817 1.48996 3.52961 2.16139 2.8332C2.83332 2.13472 3.62555 1.57964 4.49499 1.19816C5.39655 0.801017 6.36351 0.597736 7.33976 0.600118C8.70936 0.600118 10.0456 0.997831 11.2069 1.74907C11.4847 1.92877 11.7486 2.12616 11.9986 2.34122C12.2487 2.12616 12.5126 1.92877 12.7904 1.74907C13.9516 0.997831 15.2879 0.600118 16.6575 0.600118C17.6437 0.600118 18.5994 0.800448 19.5023 1.19816C20.3746 1.58114 21.1608 2.13205 21.8359 2.8332C22.5082 3.52882 23.0452 4.35758 23.4166 5.27251C23.8028 6.22407 24 7.23455 24 8.2745C24 9.25552 23.8111 10.2778 23.436 11.3177C23.1221 12.1868 22.6721 13.0883 22.097 13.9986C21.1858 15.4392 19.9329 16.9417 18.3771 18.4648C15.7991 20.9895 13.246 22.7336 13.1376 22.8043L12.4792 23.2521C12.1875 23.4494 11.8125 23.4494 11.5208 23.2521L10.8624 22.8043C10.754 22.7306 8.20375 20.9895 5.6229 18.4648C4.06716 16.9417 2.81424 15.4392 1.90302 13.9986C1.32796 13.0883 0.87513 12.1868 0.563984 11.3177C0.18894 10.2778 2.86102e-05 9.25552 2.86102e-05 8.2745C-0.0027504 7.23455 0.194496 6.22407 0.58065 5.27251ZM11.9986 20.9218C11.9986 20.9218 21.8886 14.2019 21.8886 8.2745C21.8886 5.2725 19.5467 2.83909 16.6575 2.83909C14.6267 2.83909 12.8654 4.04107 11.9986 5.7969C11.1319 4.04107 9.37055 2.83909 7.33976 2.83909C4.45054 2.83909 2.1086 5.2725 2.1086 8.2745C2.1086 14.2019 11.9986 20.9218 11.9986 20.9218Z"
+                                        fill="#171717" />
+                                </svg>
                             </li>
                             <li class="mobile-main-nav__element">
                                 <img class="mobile-main-nav__icon" src="./images/svg/logo.svg">
                             </li>
                             <li class="mobile-main-nav__element">
-                                <img class="mobile-main-nav__icon" src="./images/svg/shopping_cart.svg">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.72656 20.7883C7.72656 19.7942 8.53245 18.9883 9.52656 18.9883C10.5207 18.9883 11.3266 19.7942 11.3266 20.7883C11.3266 21.7824 10.5207 22.5883 9.52656 22.5883C8.53245 22.5883 7.72656 21.7824 7.72656 20.7883Z"
+                                        fill="#171717" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 20.7883C18 19.7942 18.8059 18.9883 19.8 18.9883C20.7941 18.9883 21.6 19.7942 21.6 20.7883C21.6 21.7824 20.7941 22.5883 19.8 22.5883C18.8059 22.5883 18 21.7824 18 20.7883Z"
+                                        fill="#171717" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 1.62549C0 1.0732 0.447715 0.625488 1 0.625488H5C5.47663 0.625488 5.88701 0.961874 5.98055 1.42923L6.82043 5.62549H23C23.298 5.62549 23.5805 5.75842 23.7705 5.98804C23.9605 6.21767 24.0381 6.52007 23.9823 6.81282L22.3809 15.2103C22.2437 15.9009 21.868 16.5212 21.3195 16.9628C20.7738 17.4021 20.0916 17.6365 19.3914 17.6255H9.68864C8.98837 17.6365 8.3062 17.4021 7.76048 16.9628C7.21225 16.5214 6.83663 15.9014 6.69933 15.2112C6.69927 15.2109 6.69938 15.2114 6.69933 15.2112L5.02879 6.86469C5.02201 6.83708 5.01638 6.80902 5.01195 6.78057L4.18032 2.62549H1C0.447715 2.62549 0 2.17777 0 1.62549ZM7.22073 7.62549L8.66084 14.8207C8.70656 15.0509 8.83179 15.2577 9.01461 15.4048C9.19743 15.552 9.42619 15.6302 9.66084 15.6257L9.68 15.6255H19.4L19.4192 15.6257C19.6538 15.6302 19.8826 15.552 20.0654 15.4048C20.2474 15.2583 20.3723 15.0528 20.4185 14.8239L21.7913 7.62549H7.22073Z"
+                                        fill="#171717" />
+                                </svg>
                             </li>
                             <li class="mobile-main-nav__element">
-                                <img class="mobile-main-nav__icon" src="./images/svg/search.svg">
+                                <img class="mobile-main-nav__icon" src="./images/svg/main_nav_bar/search.svg">
                             </li>
                         </ul>
                     </nav>
                 </div>
+
+                <footer class="footer">
+                    <div class="footer__contacts-block footer__element">
+                        <p class="contact-number">8 (800) 201-06-19</p>
+                        <a class="contact-email" href="#">mail@example.com</a>
+                        <div class="social-logos-box">
+                            <a href="#"><img src="../images/svg/social_networks/instagram.svg" alt="instagram"></a>
+                            <a href="#"><img src="../images/svg/social_networks/telegram.svg" alt="telegram"></a>
+                            <a href="#"><img src="../images/svg/social_networks/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img src="../images/svg/social_networks/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="../images/svg/social_networks/vk.svg" alt="vk"></a>
+                        </div>
+                        <div class="title-block">
+                            <h6>zeon wear</h6>
+                            <p>by zeon</p>
+                        </div>
+                    </div>
+                    <div class="footer__offers-block footer__element">
+                        <a class="links-offers" href="./pages/offer_pages/partner_offer_page.html">Стать партнером</a>
+                        <a class="links-offers" href="./pages/offer_pages/rent_page.html">Арендодателям</a>
+                        <a class="links-offers" style="line-height: 21px;"
+                            href="./pages/offer_pages/marketplace_page.html">Подключиться к партнерской программе
+                            “Маркетплейс”</a>
+                    </div>
+                    <div class="footer__links-block footer__element">
+                        <a class="links-offers" href="./pages/offer_pages/about_us_page.html">О нас</a>
+                        <a class="links-offers" href="./pages/user_pages/help_page.html">Помощь</a>
+                        <a class="links-offers" href="#">Способы оплаты</a>
+                        <a class="links-offers" href="#">Доставка</a>
+                    </div>
+                    <div class="footer__development-block footer__element">
+                        <p>Разработка сайтов и мобильных приложений</p>
+                        <a href="www.zeon.ltd">www.zeon.ltd 2022</a>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        initialSlide: 2,
+        slidesPerView: 5,
+        spaceBetween: 24,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        }
+    });
+    const spaceBetween = window.innerWidth > 768 ? 8 : 24;
+    const logoSwiper = new Swiper(".logoSwiper", {
+        initialSlide: 1,
+        slidesPerView: 1,
+        spaceBetween: spaceBetween,
+        slidesPerGroup: 1,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+</script>
+<script src="./scripts/funcMainNav.js"></script>
+
 </html>
