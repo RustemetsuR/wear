@@ -8,17 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="auth-page sign-in-page">
+    <div class="main-page">
         <div class="wrapper">
             <div class="container container-header">
                 <header class="header">
-                    <p class="header__contact-number">8 (800) 201-06-19</p>
+                    <p class="header__contact-number contact-number">8 (800) 201-06-19</p>
                     <ul class="header__social-list">
                         <li class="header__social-list-element"><a href="#"><img
                                     src="../images/svg/social_networks/instagram.svg" alt="instagram logo" /></a></li>
@@ -37,37 +37,39 @@
                 </header>
             </div>
 
-            <div class="container container-main">
-                <main class="authorization-block">
-                    <h1 class="tablet-title header__title">zeon wear</h1>
-                    <div class="authorization-block__title-block">
-                        <h2>zeon wear</h2>
-                        <p>by zeon</p>
-                    </div>
-                    <div class="authorization-block__form-block">
-                        <h3 id="auth-title">
-                            Авторизация
-                        </h3>
-                        <p>Нет аккаунта? <a href="../pages/signup_page.html">Зарегистрироваться</a></p>
-                        <form class="authorization-block__form">
-                            <div class="input-block">
-                                <input class="styled-input" id="email" type="email" required />
-                                <label class="auth-input-label" for="email">e-mail*</label>
-                            </div>
-
-                            <div class="input-block password-block">
-                                <input class="styled-input" id="password" type="password" required>
-                                <label class="auth-input-label" for="password">Пароль*</label>
-                                <img id="eye" src="../images/svg/eye_locked.svg" alt="Hide password" />
-                            </div>
-                            <button type="submit">Войти</button>
-                            <a id="forgot-password-button">Забыли пароль?</a>
-                        </form>
+            <div class="container">
+                <main class="team-main">
+                    <div class="team-main__inner">
+                        <div class="team-main__inner__element">
+                            <a href="../pages/category_team_page.html">
+                                <img src="../images/png/teams/team-1.png">
+                                <h3>Категория <br>
+                                    для команд</h3>
+                                <div class="black-background color-background"></div>
+                                <div class="red-background color-background"></div>
+                            </a>
+                        </div>
+                        <div class="team-main__inner__element">
+                            <a href="../pages/ready_made_kits.html">
+                                <img src="../images/png/teams/team-2.png">
+                                <h3>Готовые <br>
+                                    комплекты</h3>
+                                <div class="black-background color-background"></div>
+                                <div class="red-background color-background"></div>
+                            </a>
+                        </div>
+                        <div class="team-main__inner__element">
+                            <a href="../pages/constructor_page.html">
+                                <img src="../images/png/teams/team-3.png">
+                                <h3>Конструктор <br>
+                                    форм</h3>
+                                <div class="black-background color-background"></div>
+                                <div class="red-background color-background"></div>
+                            </a>
+                        </div>
                     </div>
                 </main>
-            </div>
 
-            <div class="container container-footer">
                 <div class="main-nav-block">
                     <nav class="main-nav">
                         <div class="main-nav__search-block">
@@ -76,7 +78,7 @@
                         </div>
                         <nav class="main-nav__catalog">
                             <ul>
-                                <li>Новинки</li>
+                                <li><a href="../pages/special_offers_page.html">Новинки</a></li>
                                 <li><a href="../pages/team_page.html">Команды</a></li>
                                 <li><a href="../pages/men_page.html">Мужчинам</a></li>
                                 <li><img src="../images/svg/logo.svg" alt="Logo"></li>
@@ -179,7 +181,8 @@
                                                 </a>
                                             </li>
                                             <li class="modal-block__list__item">
-                                                <a class="modal-block__list__item__link" href="">
+                                                <a class="modal-block__list__item__link"
+                                                    href="../pages/special_offers_page.html">
                                                     <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <path
@@ -270,10 +273,45 @@
                     </nav>
                 </div>
             </div>
+
+            <div class="container">
+                <footer class="footer">
+                    <div class="footer__contacts-block footer__element">
+                        <p class="contact-number">8 (800) 201-06-19</p>
+                        <a class="contact-email" href="#">mail@example.com</a>
+                        <div class="social-logos-box">
+                            <a href="#"><img src="../images/svg/social_networks/instagram.svg" alt="instagram"></a>
+                            <a href="#"><img src="../images/svg/social_networks/telegram.svg" alt="telegram"></a>
+                            <a href="#"><img src="../images/svg/social_networks/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img src="../images/svg/social_networks/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="../images/svg/social_networks/vk.svg" alt="vk"></a>
+                        </div>
+                        <div class="title-block">
+                            <h6>zeon wear</h6>
+                            <p>by zeon</p>
+                        </div>
+                    </div>
+                    <div class="footer__offers-block footer__element">
+                        <a class="links-offers" href="../pages/offer_pages/partner_offer_page.html">Стать партнером</a>
+                        <a class="links-offers" href="../pages/offer_pages/rent_page.html">Арендодателям</a>
+                        <a class="links-offers" style="line-height: 21px;"
+                            href="../pages/offer_pages/marketplace_page.html">Подключиться к партнерской программе
+                            “Маркетплейс”</a>
+                    </div>
+                    <div class="footer__links-block footer__element">
+                        <a class="links-offers" href="../pages/offer_pages/about_us_page.html">О нас</a>
+                        <a class="links-offers" href="../pages/user_pages/help_page.html">Помощь</a>
+                        <a class="links-offers" href="#">Способы оплаты</a>
+                        <a class="links-offers" href="#">Доставка</a>
+                    </div>
+                    <div class="footer__development-block footer__element">
+                        <p>Разработка сайтов и мобильных приложений</p>
+                        <a href="www.zeon.ltd">www.zeon.ltd 2022</a>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
-    <script src="../scripts/funcInputs.js">
-    </script>
 </body>
 
 </html>

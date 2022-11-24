@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="men-page constructor-page">
+        <div class="wrapper">
+            <div class="container container-header">
+                <header class="header">
+                    <p class="header__contact-number contact-number">8 (800) 201-06-19</p>
+                    <ul class="header__social-list">
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="../images/svg/social_networks/instagram.svg" alt="instagram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="../images/svg/social_networks/telegram.svg" alt="telegram logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="../images/svg/social_networks/facebook.svg" alt="facebook logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="../images/svg/social_networks/vk.svg" alt="vk logo" /></a></li>
+                        <li class="header__social-list-element"><a href="#"><img
+                                    src="../images/svg/social_networks/youtube.svg" alt="youtube logo" /></a></li>
+                    </ul>
+                    <h1 class="header__title">
+                        <a class="header__link" href="../index.html">Zeon wear</a>
+                    </h1>
+                </header>
+            </div>
+
+            <div class="container container-main">
+                <main class="main">
+                    <div class="side-bar main__element">
+                        <div class="side-bar__search-block">
+                            <h5>Виды спорта</h5>
+                            <ul>
+                                <li><label class="subscribe-input"> Футбол
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li><label class="subscribe-input"> Мини-футбол
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li><label class="subscribe-input"> Волейбол
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Легкая атлетика
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Гандбол
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Фитнес
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Регби
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Йога
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                            </ul>
+                        </div>
+                        <div class="side-bar__search-block brand-block">
+                            <h5>Бренд</h5>
+                            <input placeholder="Я ищу...">
+                        </div>
+                        <div class="side-bar__search-block">
+                            <h5>Цена</h5>
+                            <div class="price-block">
+                                <label>От <input min="0" value="100 ₽"></label>
+                                <label>До <input value="10 500 ₽"></label>
+                            </div>
+                        </div>
+                        <div class="side-bar__search-block">
+                            <h5>Размер</h5>
+                            <ul class="region-list search-lists">
+                                <li class="first-elem active">EU</li>
+                                <li>US</li>
+                                <li>JP</li>
+                                <li class="last-elem">RU</li>
+                            </ul>
+                            <ul class="size-list">
+                                <li>XXL</li>
+                                <li>XL</li>
+                                <li>L</li>
+                                <li>M</li>
+                                <li>S</li>
+                            </ul>
+
+                            <a class="size-tab">Таблица размеров</a>
+                        </div>
+                        <div class="side-bar__search-block">
+                            <h5 style="margin-bottom: 2px;">Материал</h5>
+                            <ul>
+                                <li><label class="subscribe-input"> Искусственная кожа
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Натуральная замша
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Натуральная кожа
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Натуральный нубук
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Нубук
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                                <li> <label class="subscribe-input">Полиуретан
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label></li>
+                            </ul>
+                        </div>
+                        <div class="side-bar__search-block">
+                            <h5>Цвет</h5>
+                            <ul class="color-list">
+                                <li class="active"><span style="background: #171717"></span></li>
+                                <li><span style="background: #1D9F22"></span></li>
+                                <li><span style="background: #FD9B08"></span></li>
+                                <li><span class="white-box" style="background: #fff"></span></li>
+                                <li><span style="background: #C398F9"></span></li>
+                                <li><span style="background: #B5CAF0"></span></li>
+                                <li><span style="background: #BEA461"></span></li>
+                                <li><span style="background: #1D889F"></span></li>
+                                <li><span style="background: #B4AEA5"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-content-block  main__element">
+                        <div class="results-block">
+                            <h3 class="results-block__title">
+                                Конструктор форм
+                            </h3>
+                            <div class="results-block__pages-nav">
+                                <a href="../index.html">Главная /</a>
+                                <a href="../pages/category_team_page.html">Конструктор форм</a>
+                            </div>
+
+                            <div class="main-slide-block">
+                                <div class="swiper mySwiper shirts-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shirts/shirt-1.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shirts/shirt-2.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shirts/shirt-3.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shirts/shirt-4.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shirts/shirt-5.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper mySwiper shorts-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shorts/shorts-1.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shorts/shorts-2.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shorts/shorts-3.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shorts/shorts-4.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/shorts/shorts-5.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                                <div class="swiper mySwiper socks-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/socks/socks-1.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/socks/socks-2.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/socks/socks-3.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/socks/socks-4.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-inner">
+                                                <img src="../images/png/constructor/socks/socks-5.png">
+                                                <div class="background-box"></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side-bar main__element">
+                        <div class="products-block">
+                            <div class="product-section">
+                                <h4 class="product-section__title">Футболка</h4>
+                                <div class="product-section__info">
+                                    <h5 class="product-section__info__name">
+                                        Championship VI
+                                        <span>1022188.30</span>
+                                    </h5>
+                                    <p class="product-section__info__price">Цена:
+                                        <span>1 600 ₽</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-section">
+                                <h4 class="product-section__title">ШОРТЫ</h4>
+                                <div class="product-section__info">
+                                    <h5 class="product-section__info__name">
+                                        Nobel
+                                        <span>100053.100</span>
+                                    </h5>
+                                    <p class="product-section__info__price">Цена:
+                                        <span>1 200 ₽</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-section">
+                                <h4 class="product-section__title">ГЕТРЫ</h4>
+                                <div class="product-section__info">
+                                    <h5 class="product-section__info__name">
+                                        Professional II
+                                        <span>400392.100</span>
+                                    </h5>
+                                    <p class="product-section__info__price">Цена:
+                                        <span>950 ₽</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="product-section">
+                                <h4 class="product-section__title">Количество комплектов</h4>
+                                <!-- <div class="scroll-block">
+                                    <span id="orange-line" class="orange-line line">
+
+                                    </span>
+                                    <span id="pause-icon" class="pause-icon">
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="12" cy="12.6719" r="12" fill="#8B96B1" />
+                                            <rect opacity="0.49" x="9" y="6.67188" width="2" height="12" rx="1"
+                                                fill="#D4E3FF" />
+                                            <rect opacity="0.49" x="13" y="6.67188" width="2" height="12" rx="1"
+                                                fill="#D4E3FF" />
+                                        </svg>
+                                       
+                                    </span>
+                                    <span class="gray-line line">
+
+                                    </span>
+                                </div> -->
+
+                                <input type="range" min="4" max="96" value="2" id="slider">
+                                <svg id="select-btn" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12.6719" r="12" fill="#8B96B1" />
+                                    <rect opacity="0.49" x="9" y="6.67188" width="2" height="12" rx="1"
+                                        fill="#D4E3FF" />
+                                    <rect opacity="0.49" x="13" y="6.67188" width="2" height="12" rx="1"
+                                        fill="#D4E3FF" />
+                                </svg>
+                                <div class="modal-number">
+                                    <p>2</p>
+                                </div>
+                            </div>
+
+
+                            <div class="order-block">
+                                <div class="order-block__info">
+                                    <div class="order-block__info__section">
+                                        <h6 class="order-block__info__section__title">
+                                            Количестиво комплектов
+                                        </h6>
+                                        <p class="order-block__info__section__value">3 шт</p>
+                                    </div>
+                                    <div class="order-block__info__section">
+                                        <h6 class="order-block__info__section__title">
+                                            Итого
+                                        </h6>
+                                        <p class="order-block__info__section__value">3750 ₽</p>
+                                    </div>
+                                </div>
+
+                                <button class="send-request-button">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="container container-footer">
+                <footer class="footer">
+                    <div class="footer__contacts-block footer__element">
+                        <p class="contact-number">8 (800) 201-06-19</p>
+                        <a class="contact-email" href="#">mail@example.com</a>
+                        <div class="social-logos-box">
+                            <a href="#"><img src="../images/svg/social_networks/instagram.svg" alt="instagram"></a>
+                            <a href="#"><img src="../images/svg/social_networks/telegram.svg" alt="telegram"></a>
+                            <a href="#"><img src="../images/svg/social_networks/youtube.svg" alt="youtube"></a>
+                            <a href="#"><img src="../images/svg/social_networks/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="../images/svg/social_networks/vk.svg" alt="vk"></a>
+                        </div>
+                        <div class="title-block">
+                            <h6>zeon wear</h6>
+                            <p>by zeon</p>
+                        </div>
+                    </div>
+                    <div class="footer__offers-block footer__element">
+                        <a class="links-offers" href="../pages/offer_pages/partner_offer_page.html">Стать партнером</a>
+                        <a class="links-offers" href="../pages/offer_pages/rent_page.html">Арендодателям</a>
+                        <a class="links-offers" style="line-height: 21px;"
+                            href="../pages/offer_pages/marketplace_page.html">Подключиться к партнерской программе
+                            “Маркетплейс”</a>
+                    </div>
+                    <div class="footer__links-block footer__element">
+                        <a class="links-offers" href="../pages/offer_pages/about_us_page.html">О нас</a>
+                        <a class="links-offers" href="../pages/user_pages/help_page.html">Помощь</a>
+                        <a class="links-offers" href="#">Способы оплаты</a>
+                        <a class="links-offers" href="#">Доставка</a>
+                    </div>
+                    <div class="footer__development-block footer__element">
+                        <p>Разработка сайтов и мобильных приложений</p>
+                        <a href="www.zeon.ltd">www.zeon.ltd 2022</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../scripts/funcInputs.js"></script>
+    <script>
+
+        const slidesPerView = window.innerWidth > 1366 ? 5 : 3;
+
+        const swiper = new Swiper(".shirts-swiper", {
+            initialSlide: 2,
+            slidesPerView: slidesPerView,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        const shortsSwiper = new Swiper(".shorts-swiper", {
+            initialSlide: 2,
+            slidesPerView: slidesPerView,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            centeredSlides: true,
+            slidesOffsetBefore: 27,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        const socksSwiper = new Swiper(".socks-swiper", {
+            initialSlide: 2,
+            slidesPerView: slidesPerView,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            centeredSlides: true,
+            slidesOffsetBefore: 27,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+
+</html>
