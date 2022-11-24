@@ -1,0 +1,556 @@
+.product-page {
+    .main {
+        max-width: 1392px;
+        margin: 0 auto 33px;
+
+        .main-inner {
+            &__info {
+                display: flex;
+                justify-content: space-between;
+
+                .left-side {
+                    background: #fff;
+                    padding: 33px;
+                    width: 74.2%;
+                    border-radius: 16px;
+
+                    .product-block {
+                        &__section-title {
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 29px;
+                            color: $main-black;
+                            text-transform: capitalize;
+
+                            span {
+                                color: $gray-label;
+                                margin-left: 8px;
+                            }
+                        }
+
+                        &__name {
+                            text-transform: uppercase;
+                        }
+
+                        &__page-nav {
+                            margin-top: 8px;
+                            margin-bottom: 23px;
+
+                            a {
+                                color: $gray-label;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 17px;
+                            }
+                        }
+
+                        &__images-block {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            margin-bottom: 24px;
+
+                            img {
+                                width: 49.5%;
+                                margin-bottom: 11px;
+                                border-radius: 16px;
+                            }
+                        }
+
+                        &__description-block {
+                            h3 {
+                                margin-bottom: 10px;
+                            }
+
+                            p {
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: $main-black;
+                                width: 70%;
+                            }
+
+                            margin-bottom: 35px;
+                        }
+
+                        &__more-info-button {
+                            display: block;
+                            margin-top: 9px;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 20px;
+                            color: $auth-blue;
+                            background: none;
+                            letter-spacing: 0;
+                            cursor: pointer;
+                        }
+
+                        &__characteristics-block {
+                            h3 {
+                                margin-bottom: 20px;
+                            }
+
+                            .characteristics-list {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 17.3px;
+                                margin-bottom: 16px;
+
+                                .characteristics-list-item {
+                                    display: flex;
+
+                                    .characteristics-left-side {
+                                        width: 27.5%;
+                                        display: flex;
+
+                                        .characteristics-name {
+                                            font-size: 13px;
+                                            font-weight: 400;
+                                            line-height: 16px;
+                                            color: $gray-label;
+                                        }
+
+                                        .characteristics-dots {
+                                            flex-grow: 1;
+                                            display: block;
+                                            background: url("../../../images/png/dots_line.png") bottom no-repeat;
+                                        }
+                                    }
+
+                                    .characteristics-type {
+                                        color: $main-black;
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        line-height: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right-side {
+                    background: #fff;
+                    padding: 31px 22px;
+                    padding-right: 10px;
+                    border-radius: 16px;
+                    width: 24%;
+
+                    height: 100%;
+
+                    .choice-section {
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 18.29px;
+                            position: relative;
+                            display: inline-block;
+                            padding-right: 10px;
+                            cursor: pointer;
+                            margin-bottom: 6px;
+                        }
+
+                        h5::after {
+                            content: "";
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            top: 50%;
+                            right: -3px;
+                            transform: translate(50%, -50%);
+                            background: url("/images/svg/blue-arrow.svg") no-repeat center;
+                            background-position-y: center;
+                        }
+                    }
+
+                    .choice-size {
+                        .region-list {
+                            display: flex;
+                            margin-top: 9px;
+                            margin-bottom: 17px;
+
+                            .active {
+                                color: $auth-blue;
+                            }
+
+                            .first-elem {
+                                padding-left: 0;
+                            }
+
+                            li {
+                                padding: 0;
+                                font-size: 13px;
+                                font-weight: 600;
+                                line-height: 16px;
+                                color: $gray-label;
+                                border-right: 1px solid #0000001A;
+                                padding: 0 16px 0;
+                                cursor: pointer;
+                                margin-bottom: 0;
+                            }
+
+                            .last-elem {
+                                padding-right: 0;
+                                border-right: none;
+                            }
+                        }
+
+                        .size-list {
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                            gap: 14px 7px;
+                            padding-right: 14px;
+
+                            li {
+                                width: 17%;
+                                font-size: 13px;
+                                font-weight: 500;
+                                line-height: 16px;
+                                letter-spacing: 0em;
+                                border: 1px solid #D4E3FF;
+                                padding: 12px 0;
+                                text-align: center;
+                                border-radius: 8px;
+                            }
+
+                            .active {
+                                border: 1px solid $auth-blue;
+                            }
+
+                            .empty-stock {
+                                color: #98949E;
+                            }
+                        }
+
+                        .size-tab {
+                            text-decoration: underline;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 16px;
+                            text-align: center;
+                            color: $auth-blue;
+                            display: block;
+                            margin-top: 16px;
+                        }
+                    }
+
+                    .choice-color {
+                        margin-top: 30px;
+
+                        .color-list {
+                            display: flex;
+                            margin-top: 8px;
+                            flex-wrap: wrap;
+                            justify-content: flex-start;
+                            gap: 8px;
+
+                            li {
+                                border-radius: 8px;
+                                width: 22%;
+                                cursor: pointer;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .active {
+                                border-radius: 8px;
+                                border: 1px solid $gray-label;
+                            }
+                        }
+                    }
+
+                    .price-block {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 31px;
+                        margin-left: 2px;
+                        font-family: $inter;
+
+                        p {
+                            font-size: 17px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            letter-spacing: 0em;
+                            color: $gray-label;
+                        }
+
+                        .new-price {
+                            color: $main-black;
+                            margin-left: 16px;
+                            padding-right: 10px;
+                            border-right: 1px solid #0000001A;
+                        }
+
+                        .old-price {
+                            margin-left: 11px;
+                            text-decoration: line-through;
+                        }
+
+                        .discount {
+                            margin-left: 23px;
+                        }
+                    }
+
+                    .button-block {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        margin-top: 18px;
+
+                        .heart-button {
+                            background: none;
+                            padding: 9.5px 11px;
+                            border-radius: 16px;
+                            border: 1px solid $gray-label;
+                            cursor: pointer;
+
+                            img {
+                                width: 20px;
+                            }
+                        }
+
+                        .add-button {
+                            border-radius: 16px;
+                            display: flex;
+                            align-items: center;
+                            padding: 11.5px 26.5px;
+                            background: $main-black;
+                            color: #fff;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                          
+
+                            img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__swiper-recommendation-block {
+                margin-top: 50px;
+                width: 102%;
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 25px;
+                    margin-bottom: 21px;
+                    text-transform: uppercase;
+                    color: $main-black;
+                    letter-spacing: 0.08em;
+                }
+
+                .mySwiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 23.8%;
+                            border-radius: 16px;
+                            border: 1px solid #EAF1FF;
+                            padding-bottom: 15px;
+                            position: relative;
+                            background: #fff;
+
+                            &__image {
+                                width: 100%;
+                                border-top-left-radius: 16px;
+                                border-top-right-radius: 16px;
+                            }
+
+                            &__name {
+                                margin-top: 15px;
+                                margin-left: 15px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 20px;
+                                color: $main-black;
+                            }
+
+                            &__description {
+                                margin-top: 13px;
+                                margin-left: 15px;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: #8B96B1;
+                            }
+
+                            &__new-price {
+                                font-family: $inter;
+                                display: inline-block;
+                                font-weight: 600;
+                                font-size: 15px;
+                                line-height: 150%;
+                                color: $main-black;
+                                margin-top: 13px;
+                                margin-left: 16px;
+                                padding-right: 14px;
+                                border-right: 1px solid #0000001A;
+                            }
+
+                            &__old-price {
+                                display: inline-block;
+                                font-family: $inter;
+                                font-weight: 500;
+                                font-size: 15px;
+                                line-height: 150%;
+                                color: #8B96B1;
+                                text-decoration-line: line-through;
+                                padding-left: 12px;
+                            }
+
+                            &__favorite-button {
+                                position: absolute;
+                                right: 2%;
+                                top: 13px;
+                                cursor: pointer;
+                            }
+
+                            &__new-product {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__comments-section {
+                background: #fff;
+                margin-top: 36px;
+                padding: 30.5px 32px;
+                width: 74.2%;
+                border-radius: 20px;
+
+                .comments-section-title-block {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h4 {
+                        color: $main-black;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        letter-spacing: 0.08em;
+                        text-transform: uppercase;
+                    }
+
+                    button {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 21px;
+                        letter-spacing: 0em;
+                        text-align: center;
+                        color: #fff;
+                        padding: 11.5px 46.5px;
+                        background: $main-black;
+                        border-radius: 16px;
+                        cursor: pointer;
+                    }
+                }
+
+                .comments-list {
+                    margin-top: 32px;
+
+                    &__item {
+                        padding: 24px 16px;
+                        border: 1px solid #EAF1FF;
+                        border-radius: 16px;
+                        margin-bottom: 15px;
+
+                        .user-name {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            letter-spacing: 0em;
+                        }
+
+                        .rating-block {
+                            margin-top: 14px;
+
+                            img {
+                                width: 13px;
+                                height: 12.5px;
+                                margin-right: 7px;
+                            }
+                        }
+
+                        .user-comment {
+                            color: $gray-label;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            margin-top: 14px;
+                        }
+
+                        .rate-comment-block {
+                            display: flex;
+                            margin-top: 16px;
+                            align-items: center;
+
+                            p {
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 150%;
+                                color: $gray-label;
+                                margin-right: 12px;
+                            }
+
+                            .rate-button {
+                                display: flex;
+                                align-items: center;
+                                background: none;
+                                cursor: pointer;
+
+                                span {
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                    line-height: 150%;
+                                }
+
+                                .likes-number {
+                                    color: $auth-blue;
+                                    margin-right: 8.83px;
+                                }
+
+                                .dislikes-number {
+                                    color: #696666;
+                                    margin-left: 8.83px;
+                                }
+                            }
+
+                            .border-between {
+                                display: block;
+                                background: #0000001A;
+                                width: 1px;
+                                height: 24px;
+                                margin: 0 5.84px 0 8.84px;
+                            }
+                        }
+                    }
+                }
+
+                .more-comments-button {
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    background: none;
+                    border: 1px solid $gray-label;
+                    padding: 8px 63.5px;
+                    border-radius: 16px;
+                    margin: 33px auto 0;
+                    display: block;
+                }
+            }
+        }
+    }
+}

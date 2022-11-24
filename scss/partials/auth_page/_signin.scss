@@ -9,6 +9,10 @@
         }
 
         &__title-block {
+            h2, 
+            p{
+                color: #fff;
+            }
             color: #fff;
         }
 
@@ -42,6 +46,7 @@
 
             button {
                 margin-bottom: 8px;
+                cursor: pointer;
             }
         }
 

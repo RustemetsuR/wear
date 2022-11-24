@@ -1,0 +1,115 @@
+.menu-mobile-page {
+    background: white;
+    position: relative;
+    .container-main {
+        padding: 20px 8px 0 !important;
+
+        .mobile-nav {
+            &__title-block {
+                display: flex;
+                align-items: center;
+                padding: 12px 12px 20px;
+                border-bottom: 1px solid #0000001A;
+                margin-bottom: 8px;
+
+                &__title {
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    letter-spacing: 0em;
+                }
+
+                img {
+                    transform: rotate(90deg);
+                    margin-right: 14px;
+                    width: 8px;
+                    height: 5px;
+                }
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                padding-bottom: 8px;
+                &__title {
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    color: $gray-label;
+                    padding: 20px 12px 0;
+                }
+
+                &__element {
+                    padding: 12px;
+                    border-radius: 12px;
+
+                    &__link {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+
+                        &__title {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 17px;
+                            letter-spacing: 0em;
+                        }
+
+                        &__img {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 16px;
+                        }
+
+                        .blue-arrow {
+                            transform: rotate(-90deg);
+                            width: 7px;
+                            height: 4px;
+                            position: absolute;
+                            top: 50%;
+                            right: 0;
+                            transform: translate(-50%, 0) rotate(-90deg);
+                        }
+                    }
+                }
+
+                &__element:hover {
+                    background: #F6F9FF;
+                }
+
+            }
+        }
+
+        #mobile-nav-level-2,
+        #mobile-nav-level-3 {
+            display: none;
+        }
+
+        #mobile-nav-level-2,
+        #mobile-nav-level-3 {
+            &__list {
+                &__element {
+                    &__link {
+                        &__title {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        #mobile-nav-level-3{
+            ul {
+                border-bottom: 1px solid #0000001A;
+            }
+        }
+
+        #last-list{
+            border-bottom: none !important;
+            margin-bottom: 34px;
+        }
+    }
+}

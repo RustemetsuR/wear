@@ -1,0 +1,40 @@
+.marketplace-page {
+    .main-block {
+        margin-bottom: 30px !important;
+        .title-block {
+            background: url("../../../images/jpg/offers_bg/marketplace_bg.jpg") no-repeat center;
+            padding-top: 266px !important;
+            padding-bottom: 142px !important;
+        }
+
+        .what-will-you-get-block {
+            margin-top: 113px;
+
+            .section-title {
+                margin-bottom: 27px;
+            }
+
+        }
+
+        .how-to-start-block {
+            .section-title {
+                padding-top: 64px;
+                margin-bottom: 24px;
+            }
+
+            .flex-box {
+                gap: 53px !important;
+            }
+        }
+
+        .what-can-sell-block {
+            margin-top: 68px;
+            padding-bottom: 110px !important;
+
+            .section-title {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+}

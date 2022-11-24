@@ -1,33 +1,73 @@
-.header{
+.header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 24px 0 15px;
-    &__social-list{
+
+    &__social-list {
         display: flex;
         align-items: center;
         padding: 4px 32px 0;
         border-left: 1px solid $secondary-gray-light;
         border-right: 1px solid $secondary-gray-light;
-        .header__social-list-element{
-            padding-left: 16px;
+
+        @media screen and (max-width: $tablets) {
+            padding: 4px 8px 0;
         }
-        .header__social-list-element:nth-child(1){
+
+        .header__social-list-element {
+            padding-left: 16px;
+
+            @media screen and (max-width: $tablets) {
+                padding-left: 8px;
+            }
+
+            a {
+                img {
+                    @media screen and (max-width: $tablets) {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .header__social-list-element:nth-child(1) {
             padding-left: 0;
         }
+
+        .header__social-list-element:nth-child(4),
+        .header__social-list-element:nth-child(5) {
+            @media screen and (max-width: 380px) {
+                display: none;
+            }
+        }
     }
-    &__title{
+
+    &__title {
         font-weight: 575;
         line-height: 36.57px;
         font-size: 30px;
         text-transform: lowercase;
         letter-spacing: -0.5px;
         padding-left: 32px;
+
+        @media screen and (max-width: $tablets) {
+            font-size: 13px;
+            line-height: 16px;
+            padding-left: 8px;
+        }
     }
-    &__contact-number{
+
+    &__contact-number {
         font-weight: 500;
         font-size: 20px;
         line-height: 24px;
         padding-right: 32px;
+
+        @media screen and (max-width: $tablets) {
+            font-size: 12px;
+            line-height: 15px;
+            padding-right: 8px;
+        }
     }
 }

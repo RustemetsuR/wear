@@ -1,0 +1,28 @@
+.rent-page{
+    .main-block{
+        margin-bottom: 29px !important;
+        .title-block{
+            background: url("../../../images/jpg/offers_bg/rent_bg.jpg") center no-repeat;
+            padding-bottom: 142px !important;
+            margin-bottom: 115px;
+            .send-request-button{
+                margin-top: 109px !important;
+                padding: 18px 52px;
+            }
+        }
+
+        .requirements-block{
+            .section-title{
+                margin-bottom: 25px;
+            }
+
+            .section-description{
+                width: 82%;
+            }
+        }
+
+        .benefits-block{
+            margin-top: 74px;
+        }
+    }
+}

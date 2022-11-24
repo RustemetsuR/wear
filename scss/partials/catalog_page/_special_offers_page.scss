@@ -1,0 +1,48 @@
+.special-offers-page {
+    .banner {
+        background: url("../../../images/jpg/banners/special_offers.jpg") center no-repeat !important;
+        position: relative;
+
+        &__titles {
+            position: absolute;
+            z-index: 2;
+        }
+
+        &__left-title {
+            font-weight: 200;
+            font-size: 32px;
+            line-height: 39px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #fff;
+            left: 19.7%;
+            top: 40%;
+            transform: translate(-50%, 0);
+            span {
+                text-transform: lowercase;
+                color: #fff;
+            }
+        }
+
+        &__right-title {
+            right: -20px;
+            top: 30%;
+            transform: translate(-50%, 0);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.355em;
+            color: #2F2E2C;
+            text-transform: uppercase;
+            span {
+                font-size: 43px;
+                font-weight: 800;
+                line-height: 54px;
+                letter-spacing: 0.82em;
+                color: #2F2E2C;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,294 @@
+.ready-made-product-page {
+    .main {
+        max-width: 100%;
+        margin: 0 0 32px;
+
+        .main-inner {
+            &__info {
+                .left-side {
+                    width: 78.7%;
+                    padding: 40px 33px 68px;
+
+                    .product-block {
+                        &__name {
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 23px;
+                            letter-spacing: 0.08em;
+                        }
+
+                        &__page-nav {
+                            margin-top: 10px;
+                        }
+
+                        &__main-content {
+                            display: flex;
+                            gap: 34.5px;
+
+                            &__image-swiper-block {
+                                width: 42.4%;
+
+                                .main-image-block {
+                                    position: relative;
+
+                                    .pagination-buttons {
+                                        position: absolute;
+                                        top: 48%;
+                                        transform: translate(-50%, 0);
+                                        background: none;
+                                        cursor: pointer;
+                                    }
+
+                                    .pagination-prev {
+                                        left: 33px;
+                                    }
+
+                                    .pagination-next {
+                                        right: 27px;
+                                        transform: rotate(180deg);
+                                    }
+
+                                    .pagination-number {
+                                        position: absolute;
+                                        bottom: 21px;
+                                        left: 50%;
+                                        transform: translate(-50%, 0);
+                                        background: #1717174D;
+                                        padding: 2px 16px;
+                                        border-radius: 8px;
+                                        color: #ffffff;
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        line-height: 16px;
+                                        letter-spacing: 0em;
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .swiper-block {
+                                    position: relative;
+
+                                    margin-top: 17px;
+
+                                    .swiper-imgs-block {
+                                        display: flex;
+                                        gap: 10px;
+                                        width: 81%;
+                                        margin: 0 78px;
+
+                                        img {
+                                            width: 64px;
+                                            height: 64px;
+                                            border: 1px solid #D4E3FF;
+                                            border-radius: 12px;
+                                        }
+                                    }
+
+                                    .pagination-buttons {
+                                        position: absolute;
+                                        background: none;
+                                        top: 37%;
+                                        transform: translate(-50%, 0);
+                                        cursor: pointer;
+                                    }
+
+                                    .pagination-prev {
+                                        left: 8%;
+                                        transform: rotate(90deg);
+                                    }
+
+                                    .pagination-next {
+                                        right: 8%;
+                                        transform: rotate(-90deg);
+                                    }
+                                }
+                            }
+
+                            &__product-info-block {
+                                .price-block {
+                                    margin-top: 3px;
+
+                                    p {
+                                        font-family: $inter;
+                                        display: inline-block;
+                                        font-size: 17px;
+                                        font-weight: 700;
+                                        line-height: 26px;
+                                        letter-spacing: 0em;
+                                        color: $gray-label;
+                                    }
+
+                                    .new-price {
+                                        span {
+                                            margin-left: 18px;
+                                            padding-right: 6px;
+                                        }
+                                    }
+
+                                    .old-price {
+                                        text-decoration: line-through;
+                                        padding-left: 8px;
+                                        padding-right: 11px;
+                                        border-left: 1px solid #0000001A;
+                                        border-right: 1px solid #0000001A;
+                                    }
+
+                                    .discount {
+                                        padding-left: 4px;
+                                    }
+                                }
+
+                                .description-block {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    margin-top: 29px;
+                                    gap: 19px;
+
+                                    &__element {
+                                        width: 47.5%;
+                                        padding-bottom: 19px;
+                                        border-bottom: 1px solid #D4E3FF;
+
+                                        &__name {
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            line-height: 17px;
+                                            letter-spacing: 0.06em;
+                                            color: $gray-label;
+                                            text-transform: uppercase;
+                                        }
+
+                                        &__type {
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 17px;
+                                            letter-spacing: 0em;
+                                            margin-top: 7px;
+                                            color: #000;
+                                        }
+
+                                        &__code {
+                                            color: $gray-label;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 17px;
+                                            letter-spacing: 0em;
+                                            margin-top: 9px;
+                                        }
+
+                                        &__desc {
+                                            color: #2B2B2B;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 21px;
+                                            letter-spacing: 0em;
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+
+                                .color-block {
+                                    margin-top: 16px;
+
+                                    &__title {
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        line-height: 18px;
+                                        letter-spacing: 0em;
+                                        position: relative;
+                                        display: inline-block;
+                                        padding-right: 21px;
+                                    }
+
+                                    &__title::after {
+                                        content: "";
+                                        background: url("../../../images/svg/select-arrow.svg") no-repeat;
+                                        width: 13px;
+                                        height: 7px;
+                                        position: absolute;
+                                        top: 42%;
+                                        right: 0px;
+                                    }
+
+                                    &__list {
+                                        display: flex;
+                                        gap: 28px;
+                                        margin-top: 20px;
+                                        margin-left: 4px;
+
+                                        &__item {
+                                            width: 16px;
+                                            height: 16px;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .right-side {
+                    width: 19.5%;
+                    padding: 27px 24px 8px;
+
+                    .form {
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            color: #000;
+                            margin-bottom: 13px;
+                        }
+
+                        textarea {
+                            resize: none;
+                            height: 193px;
+                        }
+
+                        .textarea-limit {
+                            text-align: right;
+                            color: $gray-label;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            letter-spacing: 0em;
+
+                            margin-top: -13px;
+                            margin-bottom: 10px;
+                        }
+
+                        button {
+                            width: 100%;
+                            background: none;
+                            padding: 11.5px;
+
+                           
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 21px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            border-radius: 16px;
+                        }
+
+                        &__send{
+                            background: $main-black !important;
+                            color: #fff;
+                        }
+
+                        &__cancel{
+                            color: $gray-label;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

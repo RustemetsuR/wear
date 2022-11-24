@@ -3,262 +3,179 @@
         background: #fff;
     }
 
-    .header {
-        @media screen and (max-width: $tablets) {
-            display: none;
-        }
-    }
-
-    .authorization-block {
-        background-size: cover;
-        height: 874px;
-        border-radius: 25px;
-        position: relative;
-        flex: 1 1 auto;
-       
-        @media screen and (max-width: $tablets) {
-            background: none;
-            padding-top: 32px;
-            height: auto;
+    .container {
+        @media screen and (max-width: $max-width) {
+            padding-left: 20px;
+            padding-right: 18px;
         }
 
-        .tablet-title {
-            display: none;
-
-            @media screen and (max-width: $tablets) {
-                display: block;
-                font-size: 30px;
-                font-weight: 575;
-                line-height: 37px;
-                letter-spacing: 0em;
-                text-align: left;
-                margin-bottom: 53px;
-            }
-        }
-
-        &__title-block {
-            padding: 66px 0 0 64px;
-            user-select: none;
+        .header {
             @media screen and (max-width: $tablets) {
                 display: none;
             }
-
-            h2 {
-                font-weight: 575;
-                font-size: 30px;
-                line-height: 36.57px;
-            }
-
-            p {
-                font-size: 20px;
-                font-weight: 500;
-                line-height: 24px;
-            }
         }
 
-        &__form-block {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position: absolute;
-            color: #000;
-            background: #FFFFFF;
-            border-radius: 16px;
-
-            @media screen and (max-width: $vp-970){
-                transform: translate(-50%, 0);
-                left: 50%;
-                right: 0;
-            }
-
+        .authorization-block {
+            background-size: cover;
+            height: 874px;
+            border-radius: 25px;
+            position: relative;
+            flex: 1 1 auto;
+    
             @media screen and (max-width: $tablets) {
-                position: relative;
-                top: 0;
-                right: 0;
-                left: 0;
-                width: 100%;
-                padding: 0;
-                margin-left: 3px;
-                transform: translate(0, 0);
-            }
-
-            h3 {
-                padding-top: 4px;
-                margin-bottom: 14px;
-                letter-spacing: 1px;
-                font-size: 18px;
-
-                @media screen and (max-width: $tablets) {
-                    letter-spacing: 0px;
-                    margin-bottom: 12px;
-                }
-            }
-
-            p {
-                font-size: 13px;
-            }
-
-            a {
-                color: $auth-blue;
-                margin-left: 2px;
-            }
-
-            select {
-                appearance: none;
-                padding: 9.5px 16px;
                 background: none;
-                position: relative;
+                padding-top: 32px;
+                height: auto;
             }
-
-            .input-block {
-                position: relative;
-                margin-bottom: 11px;
-                
-            }
-
-            .auth-input-label {
-                font-size: 13px;
-                color: $gray-label;
-                line-height: 175%;
-                font-weight: 400;
-                user-select: none;
-            }
-
-            input~label,
-            select~label {
-                transition: $labels;
-                position: absolute;
-                top: 12.5px;
-                left: 16px;
-                @media screen and (max-width: $vp-1560) {
-                    top: 9.5px;
-                }
-            }
-
-            input:focus~label,
-            input.filled~label,
-            select:focus~label,
-            select.filled~label {
-                top: -2px;
-                left: 0;
-            }
-
-            select~img {
-                position: absolute;
-                width: 9px;
-                right: 20px;
-                top: 50%;
-                transform: translate(0%, -50%);
-                cursor: pointer;
-                transition: $labels;
-
+    
+            .tablet-title {
+                display: none;
+    
                 @media screen and (max-width: $tablets) {
-                    right: 20px;
+                    display: block;
+                    font-size: 30px;
+                    font-weight: 575;
+                    line-height: 37px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin-bottom: 53px;
+                    padding-left: 0;
                 }
             }
-
-            input:focus~img,
-            input.filled~img,
-            select:focus~img,
-            select.filled~img {
-                top: 42px;
-                transition: $labels;
+    
+            &__title-block {
+                padding: 66px 0 0 64px;
+                user-select: none;
+    
+                @media screen and (max-width: $tablets) {
+                    display: none;
+                }
+    
+                h2 {
+                    font-weight: 575;
+                    font-size: 30px;
+                    line-height: 36.57px;
+                }
+    
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
             }
-
-            input:focus,
-            select:focus {
-                border-color: $auth-blue;
-            }
-
-            input:focus~label,
-            select:focus~label {
-                color: $auth-blue;
-            }
-
-            input:focus,
-            input.filled,
-            select:focus,
-            select.filled {
-                margin-top: 20px;
-                transition: $labels;
-            }
-
-        }
-
-        &__form {
-            margin-top: 32px;
-            display: flex;
-            flex-direction: column;
-            width: 97%;
-            gap: 10px;
-
-            @media screen and (max-width: $tablets) {
-                margin-top: 34px;
-            }
-
-            input, select {
-                padding: 9.5px 16px;
-                width: 100%;
-                border: 1px solid $secondary-gray-light;
+    
+            &__form-block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                color: #000;
+                background: #FFFFFF;
                 border-radius: 16px;
-                transition: $labels;
-                color: $main-black;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 22.75px;
-                letter-spacing: 1px;
-            }
-
-            .password-block {
-                position: relative;
-
-                input {
-                    padding-right: 40px;
+    
+                @media screen and (max-width: $vp-970) {
+                    transform: translate(-50%, 0);
+                    left: 50%;
+                    right: 0;
                 }
-
-                img {
-                    position: absolute;
-                    width: 17px;
-                    right: 20px;
-                    top: 50%;
-                    transform: translate(0%, -50%);
-                    cursor: pointer;
-                    transition: $labels;
+    
+                @media screen and (max-width: $tablets) {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 0;
+                    margin-left: 3px;
+                    transform: translate(0, 0);
+                }
+    
+                h3 {
+                    padding-top: 4px;
+                    margin-bottom: 14px;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+    
                     @media screen and (max-width: $tablets) {
-                        right: 20px;
+                        letter-spacing: 0px;
+                        margin-bottom: 12px;
                     }
                 }
-            }
-
-            button {
-                background: $main-black;
-                color: #fff;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 150%;
-                padding: 13px 21px 10px;
-                border-radius: 16px;
-                border: none;
-                letter-spacing: 1px;
-                margin-top: -1px;
-                margin-bottom: 10px;
-
-                @media screen and (max-width: $tablets) {
-                    margin-bottom: 0px;
-                    padding-top: 15px;
+    
+                p {
+                    font-size: 13px;
                 }
+    
+                a {
+                    color: $auth-blue;
+                    margin-left: 2px;
+                }
+    
             }
-
-            a {
-                font-size: 13px;
-                color: $gray-label;
-                text-align: center;
-
+    
+            &__form {
+                margin-top: 32px;
+                display: flex;
+                flex-direction: column;
+                width: 97%;
+                gap: 10px;
+    
                 @media screen and (max-width: $tablets) {
-                    border: 1px solid $gray-label;
-                    border-radius: 16px;
-                    padding: 12px 10px;
+                    margin-top: 34px;
+                }
+    
+                .password-block {
+                    position: relative;
+    
+                    input {
+                        padding-right: 40px;
+                    }
+    
+                    img {
+                        position: absolute;
+                        width: 17px;
+                        right: 20px;
+                        top: 50%;
+                        transform: translate(0%, -50%);
+                        cursor: pointer;
+                        transition: $labels;
+    
+                        @media screen and (max-width: $tablets) {
+                            right: 20px;
+                        }
+                    }
+                }
+    
+                button {
+                    background: $main-black;
+                    color: #fff;
                     font-size: 14px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    padding: 13px 21px 10px;
+                    border-radius: 16px;
+                    border: none;
+                    letter-spacing: 1px;
+                    margin-top: -1px;
+                    margin-bottom: 10px;
+    
+                    @media screen and (max-width: $tablets) {
+                        margin-bottom: 0px;
+                        padding-top: 15px;
+                    }
+                }
+    
+                a {
+                    font-size: 13px;
+                    color: $gray-label;
+                    text-align: center;
+    
+                    @media screen and (max-width: $tablets) {
+                        border: 1px solid $gray-label;
+                        border-radius: 16px;
+                        padding: 12px 10px;
+                        font-size: 14px;
+                    }
                 }
             }
         }

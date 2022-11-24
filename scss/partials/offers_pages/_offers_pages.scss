@@ -1,0 +1,154 @@
+.offers-pages {
+    width: 100%;
+
+    .container {
+        .header {
+            max-width: 1392px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .main-block {
+            max-width: 1392px;
+            width: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-radius: 16px;
+
+            .title-block {
+                background-size: cover;
+                padding-top: 269px;
+                padding-bottom: 200px;
+                text-align: center;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+
+                .section-title {
+                    color: #fff;
+                    letter-spacing: 0;
+                }
+
+                .send-request-button {
+                    background: $main-black;
+                    margin-top: 52px;
+                }
+            }
+
+            .text-block {
+                padding: 0 159px 0 155px;
+            }
+
+            .section-title {
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 60px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+
+            .section-title.blue {
+                color: $auth-blue;
+            }
+
+            .section-description {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+            }
+
+            .send-request-button {
+                color: #fff;
+                border-radius: 16px;
+                padding: 18px 59px;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0em;
+            }
+
+            .flex-box {
+                margin-top: 72px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 50px 0;
+                border-bottom: 1px solid #D4E3FF;
+                padding-bottom: 60px;
+
+                &__item {
+                    width: 42.5%;
+
+                    &__title {
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+
+                        margin-top: 11px;
+                    }
+
+                    &__desc {
+                        margin-top: 19px;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+
+                    &__number {
+                        background: $auth-blue;
+                        color: #fff;
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 48px;
+                        letter-spacing: 0em;
+                        padding: 8px;
+                        width: 64px;
+                        display: inline-block;
+                        text-align: center;
+                        border-radius: 16px;
+
+                        margin-bottom: 1px;
+                    }
+                }
+            }
+
+            .benefits-block__flex {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 31px;
+                padding-bottom: 119px;
+
+                &__item {
+                    width: 26%;
+
+                    &__title {
+                        font-size: 112px;
+                        font-weight: 800;
+                        line-height: 112px;
+                        letter-spacing: 0em;
+
+                        span {
+                            display: block;
+                            font-size: 28px;
+                            font-weight: 600;
+                            line-height: 42px;
+                            letter-spacing: 0.08em;
+                        }
+                    }
+
+                    &__desc {
+                        margin-top: 26px;
+                        width: 93%;
+                    }
+                }
+            }
+        }
+    }
+}

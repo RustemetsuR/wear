@@ -1,0 +1,56 @@
+.modal-block {
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s ease-in;
+    bottom: 100%;
+    right: -15px;
+    position: absolute;
+    width: 336px;
+    z-index: 5;
+    cursor: pointer;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5px;
+        background: #fff;
+        border-radius: 24px;
+        padding: 24px 16px 27px;
+
+        &__item {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 13.5px;
+            border-radius: 12px;
+
+            &__link {
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                h5 {
+                    margin-left: 16px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                }
+            }
+        }
+
+        &__item:hover {
+            background: #F6F9FF;
+            transition: .25s ease-in-out;
+        }
+
+        &__item:hover svg path,
+        &__item:hover h5{
+            transition: .25s ease-in-out;
+            fill: $auth-blue;
+            color: $auth-blue;
+        }
+    }
+}

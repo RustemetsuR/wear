@@ -1,0 +1,478 @@
+.basket-main {
+    max-width: 1392px;
+    margin: 0 auto 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .content-blocks {
+        border-radius: 16px;
+        padding: 32px;
+        background: #fff;
+    }
+
+    &__left-side {
+        width: 72%;
+
+        .basket-block {
+            &__title {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 23px;
+                letter-spacing: 0.08em;
+                margin-top: 1px;
+            }
+
+            .page-nav {
+                margin-top: 10px;
+
+                a {
+                    color: #98949E;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                }
+            }
+
+            .products-block {
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 35px;
+                    gap: 6px;
+
+                    &__item {
+                        display: flex;
+                        padding-right: 16px;
+                        border: 1px solid #EAF1FF;
+                        border-radius: 16px;
+
+                        &__img-block {
+                            width: 16%;
+                            position: relative;
+
+                            img {
+                                width: 100%;
+                                display: block;
+                                border-top-left-radius: 16px;
+                                border-bottom-left-radius: 16px;
+                            }
+
+                            span {
+                                position: absolute;
+                                top: 8px;
+                                left: 8px;
+                                padding: 2px 4px;
+                                background: #1D9F22;
+                                color: #fff;
+                                font-family: $inter;
+                                font-size: 8px;
+                                font-weight: 600;
+                                line-height: 10px;
+                                letter-spacing: 0em;
+                                text-align: center;
+                                border-radius: 16px;
+                            }
+
+                            button {
+                                border: none;
+                                background: none;
+                                cursor: pointer;
+                                position: absolute;
+                                top: 8px;
+                                right: 8px;
+
+                                svg {
+                                    width: 24px;
+                                    height: 23px;
+                                }
+                            }
+                        }
+
+                        &__info-block {
+                            padding: 16px;
+                            width: 46%;
+
+                            &__name {
+                                font-size: 15px;
+                                font-weight: 600;
+                                line-height: 18px;
+                                letter-spacing: 0em;
+                            }
+
+                            p {
+                                color: $gray-label;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 16px;
+                                letter-spacing: 0em;
+                                margin-bottom: 12px;
+
+                                span {
+                                    color: $main-black;
+                                    margin-left: 4px;
+                                }
+                            }
+
+                            &__desc {
+                                margin-top: 7px;
+                            }
+
+                            &__color {
+                                display: inline-block;
+                                border-right: 1px solid #0000001A;
+                                padding-right: 16px;
+                            }
+
+                            &__size {
+                                display: inline-block;
+                                padding-left: 12px;
+                            }
+                        }
+
+                        &__buttons-block {
+                            width: 21%;
+
+                            &__interface {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 13px;
+
+                                &__delete {
+                                    background: none;
+                                    margin-right: 10px;
+                                }
+
+                                &__decrease {
+                                    position: relative;
+                                    border: 1px solid #D4E3FF;
+                                    color: #032D80;
+                                    padding: 18px;
+                                    border-radius: 10px;
+                                    background: none;
+                                    margin-right: 8px;
+
+                                    svg {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+
+                                &__increase {
+                                    position: relative;
+                                    border: 1px solid $main-black;
+                                    color: white;
+                                    padding: 18px;
+                                    background: $main-black;
+                                    border-radius: 10px;
+
+                                    svg {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+
+                                input {
+                                    width: 33%;
+                                    text-align: center;
+                                    border: 1px solid #D4E3FF;
+                                    color: $main-black;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    padding: 10.5px;
+                                    margin-right: 8px;
+                                    border-radius: 10px;
+                                }
+                            }
+
+                            p {
+                                margin-top: 10px;
+                                text-align: center;
+                                font-family: $inter;
+                                font-weight: 400;
+                                font-size: 13px;
+                                line-height: 19.5px;
+                                color: #FD9B08;
+                            }
+                        }
+
+                        &__price-block {
+                            flex-grow: 1;
+                            text-align: right;
+                            padding-top: 16px;
+
+                            p {
+                                font-family: $inter;
+                                font-size: 15px;
+                                line-height: 150%;
+                                margin-bottom: 5px;
+                            }
+
+                            &__new-price {
+                                font-weight: 700;
+                                color: $main-black;
+                            }
+
+                            &__old-price {
+                                text-decoration: line-through;
+                                font-weight: 500;
+                                color: $gray-label;
+                            }
+
+                            &__discount {
+                                font-weight: 500;
+                                color: $gray-label;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .order-block {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+
+            &__input-block {
+                padding: 31px 32px 8px;
+                flex-grow: 1;
+
+                &__main-info {
+                    display: flex;
+                    border-radius: 16px;
+                    padding-bottom: 36px;
+                    justify-content: space-between;
+
+                    .left-side {
+                        width: 42%;
+                        margin-top: 1px;
+
+                        .title {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                        }
+
+                        .code {
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            letter-spacing: 0em;
+                            color: $gray-label;
+                            margin-top: 8px;
+
+                            span {
+                                font-weight: 600;
+                                color: $main-black;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+
+                    .right-side {
+                        flex-grow: 1;
+
+                        .input-block {
+                            margin-bottom: 9px;
+                        }
+
+                        textarea {
+                            resize: none;
+                            height: 172px;
+                        }
+                    }
+                }
+
+                &__buy-options {
+                    border-top: 1px solid #D4E3FF;
+                    padding: 23px 0 15px;
+                    display: flex;
+
+                    .left-side {
+                        flex-grow: 1;
+
+                        .title {
+                            font-size: 15px;
+                            font-weight: 600;
+                            line-height: 23px;
+                            letter-spacing: 0em;
+                            color: #000;
+                        }
+                    }
+
+                    .right-side {
+                        width: 57.5%;
+                    }
+                }
+
+                .payment {
+                    padding-top: 37px;
+                }
+            }
+
+            &__info-block {
+                width: 35.5%;
+                height: 100%;
+                padding: 21.3px 5px 21.3px 20px;
+
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 41px;
+
+                    &__item {
+                        .title {
+                            font-size: 13px;
+                            font-weight: 700;
+                            line-height: 16px;
+                            letter-spacing: 0em;
+                            margin-top: 13px;
+                        }
+
+                        .description {
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            letter-spacing: 0em;
+                            color: #2B2B2B;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__right-side {
+        width: 25.5%;
+        height: 100%;
+        padding: 21px 22px 25px 19px !important;
+
+        .total-price-block {
+            padding-bottom: 24px;
+            border-bottom: 1px solid #D4E3FF;
+
+            .text-block {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+
+
+                .price::after {
+                    content: " ₽";
+                }
+
+                .amount::after {
+                    content: " шт";
+                }
+
+                .discount::before {
+                    content: "-";
+                }
+            }
+
+
+            .total {
+                margin-bottom: 22px;
+            }
+
+            .bonus .title,
+            .bonus .text {
+                color: #2B2B2B;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0em;
+                margin-bottom: 12px;
+            }
+
+            .total .title,
+            .total .price {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0em;
+            }
+
+            .bonus {
+                .discount {
+                    color: #DD2C28;
+                }
+            }
+        }
+
+        .promocode-block {
+            padding-top: 12px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #D4E3FF;
+
+            .title {
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 23px;
+                letter-spacing: 0em;
+                color: #000;
+                margin-bottom: 8px;
+            }
+
+            .active-promocode {
+                background: $auth-blue;
+                display: block;
+                border: 1px solid #fff;
+                color: #fff;
+                width: 100%;
+                border-radius: 16px;
+                padding: 11.5px 0;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: 0em;
+                cursor: pointer;
+            }
+        }
+
+        .order-block {
+            label {
+                display: block;
+                margin: 27px 0 0 33px;
+            }
+
+            button {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: center;
+                width: 100%;
+                background: $main-black;
+                color: #fff;
+                padding: 11.5px 0;
+                border-radius: 16px;
+                cursor: pointer;
+                margin-top: 21px;
+            }
+
+            .terms-link {
+                color: $auth-blue;
+                text-align: center;
+                display: block;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

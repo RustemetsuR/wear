@@ -1,0 +1,31 @@
+.partner-page {
+    .main-block {
+        margin-bottom: 32px !important;
+        .title-block {
+            background: url("../../../images/jpg/offers_bg/partner_bg.jpg") no-repeat center;
+        }
+
+        .lorem-block {
+            margin-top: 91px;
+            margin-bottom: 60px;
+
+            .section-title {
+                margin-bottom: 26px;
+            }
+        }
+
+        .have-offer-block{
+            background: url("../../../images/jpg/offers_bg/have_offers_bg.jpg") bottom center no-repeat;
+            background-size: cover;
+            padding: 248px 134px 176px;
+            .section-title{
+                letter-spacing: 0;
+            }
+            .send-request-button{
+                background: $auth-blue;
+                margin-top: 25px;
+                padding: 18px 24px;
+            }
+        }
+    }
+}

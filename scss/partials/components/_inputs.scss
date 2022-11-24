@@ -1,0 +1,225 @@
+//inputs, textareas and selects
+
+.input-block {
+    position: relative;
+    margin-bottom: 11px;
+}
+
+.styled-input{
+    padding: 9.5px 16px;
+    width: 100%;
+    border: 1px solid $secondary-gray-light;
+    border-radius: 16px;
+    transition: $labels;
+    color: $main-black;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22.75px;
+    letter-spacing: 1px;
+    outline: none;
+    appearance: none;
+    background: none;
+    position: relative;
+}
+
+.auth-input-label {
+    font-size: 13px;
+    color: $gray-label;
+    line-height: 175%;
+    font-weight: 400;
+    user-select: none;
+}
+
+.styled-input~label,
+select~label {
+    transition: $labels;
+    position: absolute;
+    top: 12.5px;
+    left: 16px;
+    @media screen and (max-width: $vp-1560) {
+        top: 9.5px;
+    }
+}
+
+.styled-input:focus~label,
+.styled-input.filled~label,
+select:focus~label,
+select.filled~label {
+    top: -2px;
+    left: 0;
+}
+
+select~img {
+    position: absolute;
+    width: 9px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: $labels;
+
+    @media screen and (max-width: $tablets) {
+        right: 20px;
+    }
+}
+
+.styled-input:focus~img,
+.styled-input.filled~img,
+select:focus~img,
+select.filled~img{
+    top: 42px;
+    transition: $labels;
+}
+
+.styled-input:focus,
+select:focus {
+    border-color: $auth-blue;
+}
+
+.styled-input:focus~label,
+select:focus~label {
+    color: $auth-blue;
+}
+
+.styled-input:focus,
+.styled-input.filled,
+select:focus,
+select.filled {
+    margin-top: 20px;
+    transition: $labels;
+}
+
+.birthday-inputs-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .input-block-day {
+        width: 22%;
+    }
+
+    .input-block-month {
+        width: 51%;
+    }
+
+    .input-block-year {
+        width: 23%;
+    }
+}
+
+
+
+
+//radio
+.container-radio {
+    display: block;
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $main-black;
+    padding-left: 29px;
+    margin-bottom: 23px;
+    cursor: pointer;
+
+    & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    & .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16.67px;
+        width: 16.67px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #8B96B1;
+    }
+
+    &:hover input~.checkmark {
+        background-color: #ccc;
+    }
+
+    & .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    & input:checked~.checkmark:after {
+        display: block;
+    }
+
+    & .checkmark:after {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 8.33px;
+        height: 8.33px;
+        border-radius: 50%;
+        background: #8B96B1;
+    }
+}
+
+//checkbox
+
+.subscribe-input {
+    display: block;
+    position: relative;
+    margin: 14px auto 0;
+    padding-left: 27px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    & input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        height: 20px;
+        width: 20px;
+        background-color: none;
+        border: 1px solid #CDDAF1;
+        border-radius: 5px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: url("../../../images/svg/checked.svg") no-repeat center;
+            background-size: 20px 10px;
+            display: none;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    & input:checked~.checkmark {
+        background-color: $main-black;
+        border: 1px solid $main-black;
+    }
+
+    & input:checked~.checkmark:after {
+        display: block;
+    }
+}
